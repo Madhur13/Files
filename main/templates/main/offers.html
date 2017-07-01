@@ -1,0 +1,35 @@
+<!--
+                 {% for offer in offers %}
+					<div class="col-xs-12 col-sm-2">
+	        			<div style="height:210px;width=100px;border:1px solid black;">
+		        			<img src="Images/partner_logos/bigbasket.png" height="50" width="110px" style="display:block;margin:auto;"/>
+		        			<h5 class="offerdes"><b>The Great Grocery Sale: Upto 50% Off on Grocery & Kitchen Supplies </b></h5>
+		        			<p class="company">A line about company</p>
+		        			<a target="_blank" href="#" class="button">Go to Mobikwik</a><a target="_blank" href="#" class="button2">See more Offers(21)</a>
+		        		</div>
+	        		</div>
+				{% endfor %}
+           -->
+
+		   {% for offer in offers %}
+			 <div class="col-md-12 product_offer no-pad-men">
+					<div class="offer-item offer-list">
+						<div class="row">
+							<div class="col-md-2">
+								{% if offer.company.logo %}
+									<img src="{{offer.company.logo.url}}" alt="{{offer.company.name}}" height="80px;" />
+									{% endif %}
+							</div>
+							<div class="col-md-8">
+								<h3>{{offer.description}} </h3>
+							</div>
+							<div class="col-md-2">
+								<div class="item-info-product ">
+									<a target="_blank" href="{% url 'shop' offer.id%}" class="item_add single-item hvr-outline-out button2">GRAB OFFER</a>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			{% endfor %}

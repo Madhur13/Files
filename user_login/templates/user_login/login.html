@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styling %}
+<link rel="stylesheet" href="{% static 'main/assets/demo.css' %}">
+<link rel="stylesheet" href="{% static 'main/assets/form-login.css' %}">
+{% endblock %}
+{% block content%}
+
+
+<div class="main-content">
+     <form class="form-login" method="POST" action="#">
+			 	{% csrf_token %}
+            <div class="form-log-in-with-email">
+                <div class="form-white-background">
+                    <div class="form-title-row">
+                        <h1>Log in</h1>
+                    </div>
+										{% if message %}
+											{{ message }}</br></br></br>
+										{% endif%}
+                    <div class="form-row">
+                        <label for='username'>Username</label>
+                            <input id='username' type='text' name='username'/>
+                    </div>
+
+                    <div class="form-row">
+                        <label for='password'>Password</label>
+                            <input id='password' type='password' name='password'/>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit">Log in</button>
+                    </div>
+
+                </div>
+
+                <a href="#" class="form-forgotten-password">Forgot password &middot;</a>
+                <a href="form-register.html" class="form-create-an-account">Create an account &rarr;</a>
+
+            </div>
+
+            <div class="form-sign-in-with-social">
+
+                <div class="form-row form-title-row">
+                    <span class="form-title">Sign in with</span>
+                </div>
+
+                <a href="#" class="form-google-button">Google + </a>
+                <a href="#" class="form-facebook-button">Facebook</a>
+
+            </div>
+
+        </form>
+
+    </div>
+{% endblock %}

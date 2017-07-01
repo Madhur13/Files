@@ -1,0 +1,113 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+	<title>Refer N Get | Save & Earn Money with us </title>
+{% endblock %}
+    
+{% block content%}  
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 col-sm-2">
+              
+<nav class="navigation" >
+    <ul class="mainmenu">
+        <li><a href="#">Offers by Products<span class="caret"></span></a>
+            <ul class="submenu">
+			{% for category in categories %}
+				<li><a href="{% url 'category' category.name %}">{{ category.name }}</a></li>
+			{%endfor%}
+            </ul>                                       
+        </li>
+        <li><a href="recharge.html" target="_blank">Recharge & Bill</a></li>
+           <li><a href="#">Loan and Banking</a>
+                <ul class="submenu">
+                    <li><a href="#">Kotak Mahindra</a></li>
+                    <li><a href="#">City Bank</a></li>
+                    <li><a href="#">HDFC Bank</a></li>
+                    <li><a href="#">Axis Bank</a></li>
+                    <li><a href="#">HDFC Bank</a></li>
+                </ul> 
+          </li>
+           <li><a href="Matrimonial.html">Matrimonial </a></li>
+           <li><a href="Domain%20and%20Hosting.html">Domain and Hosting</a></li>
+           <li><a href="#">Travel and Booking<span class="caret"></span></a>
+                <ul class="submenu">
+                     <li><a href="#">Flight</a></li>
+                     <li><a href="#">Train, Bus Ticket</a></li>
+                     <li><a href="#">Vechile-Rent</a></li>             
+                     <li><a href="#">Hotels</a></li>
+                     <li><a href="#">Cab, Taxi </a></li>
+                </ul> 
+           </li>
+           <li><a href="#">Online Food </a></li>
+           <li><a href="#">Servieces<span class="caret"></span></a></li>
+           <li><a href="#">Education</a></li>
+           <li><a href="#">Others</a></li>
+  </ul>
+</nav>
+          </div>
+              <div class="col-xs-12 col-sm-10">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'main/Slides/1.jpg' %}" alt="Step-1">
+    </div>
+
+    <div class="item">
+      <img src="{% static 'main/Slides/2.jpg' %}" alt="Step-2">
+    </div>
+
+    <div class="item">
+      <img src="{% static 'main/Slides/3.jpg' %}" alt="Step-3">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+          </div></div> </div>  
+    
+    <div class="container-fluid">
+    <div class="row">
+   
+                    <h1 style="text-align:center;">Today's Latest Offers n Deals </h1>
+	        		<div class="col-xs-12 col-sm-2">
+	                   <div style="height:430px;width=100px;border:1px solid black;">
+		              <a href="#"><img src="Images/partner_logos/ad.jpg" height="430" width="140px" style="display:block;margin:auto;"/></a>	</div>
+	        		</div>
+					{{results}}
+                   
+                 
+        <div class="col-xs-12 col-sm-12">
+        <img src="Images/offer_guide.jpg" width="1200px" alt="offer and deals guide"/>
+            <button type="button"><a href="#" ><img src="Images/your_guide.png"  title="Your Guide" alt="your guide" height="92px" width="92px"/></a></button>
+        </div>
+        </div></div>
+{% endblock %}
+     
+
+
+
+
+  
+
+
+
+

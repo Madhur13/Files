@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styling %}
+<link rel="stylesheet" href="{% static 'main/assets/demo.css' %}">
+<link rel="stylesheet" href="{% static 'main/assets/form-login.css' %}">
+{% endblock %}
+{% block content%}
+
+<div class="main-content">
+  <form class="form-login"action='#' method='POST'>
+    {% csrf_token %}
+
+    <div class="form-log-in-with-email ">
+    <div class="form-white-background">
+
+      <div class="form-title-row">
+                        <h1>Create an account</h1>
+                    </div>
+                    {{referral_error}}</br></br></br>
+                    {% if message %}
+                    	{{ message }}</br>
+                    {% endif%}
+    {% for field in form %}
+    <div class="form-row row">
+        <div class="col-md-4">
+        {{ field.label_tag }}
+      </div>
+      <div class="col-md-8">
+       {{ field }}
+     </div>
+    </div>
+    {% endfor %}
+
+    <input type='submit' value='Sign Up'/>
+
+    </div>
+
+    </div>
+    <div class="form-sign-in-with-social" >
+
+        <div class="form-row form-title-row">
+            <span class="form-title">Sign in with</span>
+        </div>
+
+        <a href="#" class="form-google-button">Google + </a>
+        <a href="#" class="form-facebook-button">Facebook</a>
+
+    </div>
+  </form>
+
+</div>
+
+{% endblock %}

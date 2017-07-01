@@ -1,0 +1,184 @@
+.footer-copyright {
+  text-align: center;
+  color: #7C7C7C;
+  border-top: 1px dotted #7C7C7C;
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+.footer {
+  background-color: whitesmoke;
+  color: darkcyan;
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+}
+.footer h3 {
+  color: darkgreen;
+  font-size: 1.3em;
+  border-bottom: 1px dotted #7C7C7C;
+}
+.footer ul {
+  padding: 0;
+}
+.footer a {
+    color: darkgreen;
+}
+
+
+.team-member {
+  background: #FFF;
+  border: 8px solid #FFF;
+  -webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  -moz-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  color: inset 0 1px #fff,0 0 8px #c8cfe6;
+}
+.team-member img {
+  max-width: 100%;
+}
+.team-member ul {
+  list-style-type: none;
+}
+.team-member:hover .team-member-image {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+ .team-member-image {
+  text-align: center;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  transition: opacity .25s linear;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  font-size: 1.3em;
+}
+ .team-member-name
+{
+    color: maroon;
+}
+.abc
+{
+    -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  transition: opacity .25s linear;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+}
+
+.button
+{
+    background-color: maroon;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;    
+    display:block;
+}
+.button:hover
+{
+    color: ghostwhite;
+}
+.col-sm-2,.col-xs-12
+ {
+      margin-top: 10px;   
+  }
+  
+.button2
+{   
+    text-align: center;
+    text-decoration: none;
+    display:block;
+color: blue;
+}
+.offerdes
+{
+   text-align:center;
+}
+.calltoaction-wrapper {
+  text-align: center;
+}
+.calltoaction-wrapper h3 {
+  display: inline-block;
+ }
+
+.points
+{
+    color: yellowgreen;
+}
+
+
+.more-options
+{
+    height :350px;
+    overflow-y: scroll;
+}
+
+.intro-header {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../Images/intro-bg.jpg) ;
+  
+}
+ #content {
+     float: left;
+    position:relative;
+    margin:50px auto;
+    width:400px;
+    min-height:150px;
+    z-index:100;
+    padding:30px;
+    border:1px solid #383838;
+    /* My stipped background */
+    background: #D1D1D1;
+    /* Old browsers */
+    background: -moz-repeating-linear-gradient(-45deg, #EFC1CB, #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px, #F2F2F2 70px, #F2F2F2 80px);
+    /* FF3.6+ */
+    background: -webkit-repeating-linear-gradient(-45deg, #EFC1CB, #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px, #F2F2F2 70px, #F2F2F2 80px);
+    /* FF3.6+ */
+    background: -o-repeating-linear-gradient(-45deg, #EFC1CB, #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px, #F2F2F2 70px, #F2F2F2 80px);
+    /* FF3.6+ */
+    background: repeating-linear-gradient(-45deg, #EFC1CB, #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px, #F2F2F2 70px, #F2F2F2 80px);
+    /* FF3.6+ */
+    /*border-radius*/
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    /*box-shadow*/
+    -webkit-box-shadow:0px 1px 6px #3F3F3F;
+    -moz-box-shadow:0px 1px 6px #3F3F3F;
+    box-shadow:0px 1px 6px #3F3F3F;
+}
+ #content:after {
+    background:#F9F9F9;
+    margin:10px;
+    position: absolute;
+    content :" ";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border:1px #E5E5E5 solid;
+    /*border-radius*/
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}
+
+
+ 
