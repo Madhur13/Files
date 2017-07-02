@@ -53,7 +53,7 @@ def shop(request, offer_id):
     customer = request.user.customer;
     click = Click(user=customer, offer=offer)
     click.save()
-    link = offer.url;
+    link = offer.url
     return HttpResponseRedirect('https://linksredirect.com/?pub_id=16923CL15205&subid='+str(click.id)+'&source=linkkit&url='+link)
 
 @login_required
@@ -70,6 +70,16 @@ def mailoffers(request):
     results = 'Please select a category from Filter.'
     categories = Category.objects.all()
     return render(request,'main/offer_page.html', {'categories':categories, 'results':results})
+
+@login_required
+def profile(request):
+    customer = request.user.customer
+    transactions = Transaction.objects.filter(user=customer)
+    referrals = Customer.objects.filter(referee_code=customer.referral_code)
+    categories = customer.categories.all()
+    other_categories = Category.objects.exclude(pk__in=categories)
+    return render(request, 'main/profile.html', {'customer': customer, 'transactions':transactions, 'referrals':referrals, 'categories':categories, 'other_categories':other_categories})
+    
         
         
     

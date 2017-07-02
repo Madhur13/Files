@@ -15,7 +15,7 @@ class Company(models.Model):
 
 class Customer(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE)
-    category = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category)
     balance = models.FloatField()
     referral_code = models.CharField(max_length=15,null=True, blank=True)
     referee_code = models.CharField(max_length=15,null=True, blank=True)

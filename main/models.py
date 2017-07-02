@@ -45,7 +45,7 @@ class Transaction(models.Model):
     created = models.DateTimeField(default=timezone.now(),null=True,blank=True)
     readonly_fields = ('created',)
     def __str__(self):
-        return str(self.id)
+        return str(self.id)+' '+str(self.user.user)+' '+str(self.offer.company.name) 
 
     
 
