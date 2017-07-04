@@ -19,6 +19,11 @@ class Customer(models.Model):
     balance = models.FloatField()
     referral_code = models.CharField(max_length=15,null=True, blank=True)
     referee_code = models.CharField(max_length=15,null=True, blank=True)
+    account_name = models.CharField(max_length=100,null=True, blank=True)
+    account_no =  models.IntegerField(null=True, blank=True)
+    ifsc = models.CharField(max_length=15,null=True, blank=True)
+    paytm_name = models.CharField(max_length=100,null=True, blank=True)
+    paytm_no = models.IntegerField(null=True, blank=True)
     created = models.DateTimeField(default=timezone.now(),null=True, blank=True)
     readonly_fields = ('created',)
 

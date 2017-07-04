@@ -13,15 +13,19 @@ def login_view(request):
     if request.method == 'GET':
         return render(request, 'user_login/login.html')
     elif request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            if user.is_active:
-                login(request,user)
-                return HttpResponseRedirect(next_page)
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                if user.is_active:
+                    login(request,user)
+                    return HttpResponseRedirect(next_page)
+                else:
+                    return render(request,'user_login/login.html',{'message':'Disabled user'})
             else:
-                return render(request,'user_login/login.html',{'message':'Disabled user'})
+                return render(request,'user_login/login.html',{'message':'Invalid User'})
         else:
             return render(request,'user_login/login.html',{'message':'Invalid User'})
 

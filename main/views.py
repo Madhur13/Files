@@ -6,6 +6,7 @@ from user_login.models import *
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from cashback.tasks import SendOfferEmail
+from .forms import *
 
 
 
@@ -81,6 +82,34 @@ def profile(request):
     return render(request, 'main/profile.html', {'customer': customer, 'transactions':transactions, 'referrals':referrals, 'categories':categories, 'other_categories':other_categories})
     
         
+@login_required
+def addBankDetails(request):
+    customer = request.user.customer
+    if(request.method=='POST'):
+        form = BankDetailsForm(request.POST)
+        if form.is_valid():
+            account_name = form.cleaned_data['account_name']
+            account_no = form.cleaned_data['account_no']
+            ifsc = form.cleaned_data['ifsc']
+            customer.account_name = account_name
+            customer.account_no = account_no
+            customer.ifsc = ifsc
+            customer.save()
+            
+    return render(request, 'main/profile.html', {'customer': customer})
+
+@login_required
+def addPaytmDetails(request):
+    customer = request.user.customer
+    if(request.method=='POST'):
+        form = PaytmDetailsForm(request.POST)
+        if form.is_valid():
+            paytm_name = form.cleaned_data['paytm_name']
+            paytm_no = form.cleaned_data['paytm_no']
+            customer.paytm_name = paytm_name
+            customer.paytm_no = paytm_no
+            customer.save()    
+    return render(request, 'main/profile.html', {'customer': customer})
         
     
 

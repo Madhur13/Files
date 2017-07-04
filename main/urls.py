@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^shop/(?P<offer_id>[0-9]+)$', views.shop, name='shop'),
     url(r'^mailoffers', views.mailoffers, name='mailoffers'),
     url(r'^profile$', views.profile, name='profile'),
+    url(r'^addBankDetails$', views.addBankDetails, name='addBankDetails'),
+    url(r'^addPaytmDetails$', views.addPaytmDetails, name='addPaytmDetails'),
 ]

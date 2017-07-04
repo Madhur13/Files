@@ -111,19 +111,23 @@ label {
                       <h3>Minimun Payout Limit is 500, Fill suitable form.</h3>
                <div class="col-sm-6">
                       <div id="content" >
-         <form action=" " method="post" autocomplete="on">
+         <form action="{% url  'addBankDetails' %}" method="post" autocomplete="on">
+           {%csrf_token%}
+                  {% if message %}
+                    	{{ message }}</br>
+                    {% endif%}
              <h3><b>Bank Transfer</b></h3><br>
         <p>
-            <label for="username" class="icon-user"> Name</label>
-            <input type="text"  required="required" placeholder="Account Holder Name" />
+            <label for="name" class="icon-user"> Name</label>
+            <input type="text" id="name" required="required" name="account_name" placeholder="Account Holder Name" {% if customer.account_name %}value="{{customer.account_name}}" {%endif%} />
         </p><br>
              <p>
-            <label for="usersite" class="icon-link"> Account No.</label>
-            <input type="tel"  placeholder="Bank A/C No." />
+            <label for="accountNo" class="icon-link"> Account No.</label>
+            <input type="number" id="accountNo" name="account_no" placeholder="Bank A/C No." {%if customer.account_no%}value="{{customer.account_no}}" {%endif%} />
         </p><br>
              <p>
-            <label for="username" class="icon-user"> Branch IFSC</label>
-            <input type="text"  required="required" placeholder="Branch IFSC Code" />
+            <label for="ifsc" class="icon-user"> Branch IFSC</label>
+            <input type="text" id="ifsc" name="ifsc" required="required" placeholder="Branch IFSC Code" {%if customer.ifsc %}value="{{customer.ifsc}}" {%endif%}/>
         </p><br>
         <input type="submit" value=" Save" />
               </form></div>
@@ -131,15 +135,19 @@ label {
 
               <div class="col-sm-6">
                   <div id="content" class="col-sm-6">
-           <form action=" " method="post" autocomplete="on">
+           <form action="{% url 'addPaytmDetails' %}" method="post" autocomplete="on">
+             {%csrf_token%}
+             {% if message %}
+                 {{ message }}</br>
+               {% endif%}
                <h3><b>Paytm Wallet</b> </h3><br>
         <p>
-            <label for="username" class="icon-user"> Name</label>
-            <input type="text"  required="required" placeholder="Your Name" />
+            <label for="name" class="icon-user"> Name</label>
+            <input type="text" id="name" name="paytm_name" required="required" placeholder="Your Name" {%if customer.paytm_name%}value="{{customer.paytm_name}}" {%endif%} />
         </p><br>
         <p>
-            <label for="usersite" class="icon-link"> Phone</label>
-            <input type="tel"  placeholder="09876543210" />
+            <label for="phone" class="icon-link"> Phone</label>
+            <input type="tel" id="phone" name="paytm_no" placeholder="Paytm Mobile Number" {%if customer.paytm_no%}value="{{customer.paytm_no}}" {%endif%}/>
         </p>
 
         <br>
@@ -192,7 +200,7 @@ label {
                 <div class="tab-pane " id="tab4">
                   <div class="row">
                       <h3 style="text-align:center;">Select your product/serviece category and get related offers direct right in your Inbox.</h3>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <div class="filteration">
 				<h4>Selected Categories</h4>
 				<div class="swit form">
@@ -202,7 +210,7 @@ label {
 				</div>
 				</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-5">
 						<div class="filteration">
 						<h4>Unselected Categories</h4>
 						<div class="swit form">
