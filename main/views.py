@@ -96,7 +96,7 @@ def addBankDetails(request):
             customer.ifsc = ifsc
             customer.save()
             
-    return render(request, 'main/profile.html', {'customer': customer})
+    return profile(request)
 
 @login_required
 def addPaytmDetails(request):
@@ -109,7 +109,17 @@ def addPaytmDetails(request):
             customer.paytm_name = paytm_name
             customer.paytm_no = paytm_no
             customer.save()    
-    return render(request, 'main/profile.html', {'customer': customer})
+    return profile(request)
+
+@login_required
+def setCategoryPrefs(request):
+    customer = request.user.customer
+    if(request.method=='POST'):
+        customer.categories.clear()
+        for category_id in request.POST.getlist('categories[]'):
+            category = Category.objects.get(id=category_id)
+            customer.categories.add(category)
+    return profile(request)
         
     
 

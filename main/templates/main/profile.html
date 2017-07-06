@@ -198,14 +198,17 @@ label {
 
                     </div>
                 <div class="tab-pane " id="tab4">
+                  <form action="{% url 'setCategoryPrefs' %}" method="POST">
+                    {%csrf_token%}
                   <div class="row">
                       <h3 style="text-align:center;">Select your product/serviece category and get related offers direct right in your Inbox.</h3>
                     <div class="col-sm-5">
                         <div class="filteration">
 				<h4>Selected Categories</h4>
+
 				<div class="swit form">
 					{% for category in categories %}
-						 <input type="checkbox" checked id="{{category.name}}"><label for="{{category.name}}">{{category.name}}</label><br/>
+						 <input type="checkbox" name="categories[]" value="{{category.id}}" checked id="{{category.name}}"><label for="{{category.name}}">{{category.name}}</label><br/>
 					{% endfor %}
 				</div>
 				</div>
@@ -215,7 +218,7 @@ label {
 						<h4>Unselected Categories</h4>
 						<div class="swit form">
 					{% for category in other_categories %}
-						 <input type="checkbox"  id="{{category.name}}"><label for="{{category.name}}">{{category.name}}</label><br/>
+						 <input type="checkbox"  name="categories[]" value="{{category.id}}" id="{{category.name}}"><label for="{{category.name}}">{{category.name}}</label><br/>
 					{% endfor %}
 				</div>
 				</div>
@@ -223,7 +226,8 @@ label {
 
 
                     </div>
-
+                    <button type="submit" value="Submit">Submit</button>
+                  </form>
                   </div>
 
                   <div class="tab-pane " id="tab5">

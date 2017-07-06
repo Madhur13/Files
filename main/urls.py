@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^profile$', views.profile, name='profile'),
     url(r'^addBankDetails$', views.addBankDetails, name='addBankDetails'),
     url(r'^addPaytmDetails$', views.addPaytmDetails, name='addPaytmDetails'),
+    url(r'^setCategoryPrefs$', views.setCategoryPrefs, name='setCategoryPrefs'),
 ]
