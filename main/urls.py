@@ -12,4 +12,6 @@ urlpatterns = [
     url(r'^addBankDetails$', views.addBankDetails, name='addBankDetails'),
     url(r'^addPaytmDetails$', views.addPaytmDetails, name='addPaytmDetails'),
     url(r'^setCategoryPrefs$', views.setCategoryPrefs, name='setCategoryPrefs'),
+    url(r'^contact$', views.contact, name="contact"),
+    url(r'^terms$', views.terms, name="terms"),
 ]

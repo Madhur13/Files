@@ -12,8 +12,8 @@ from .forms import *
 
 def index(request):
     categories = Category.objects.all()
-    offers = Offer.objects.all()
-    template = loader.get_template('main/offers.html')
+    offers = Offer.objects.filter(hot=1)
+    template = loader.get_template('main/hot_offers.html')
     results = template.render({'offers':offers}, request)
     return render(request, 'main/index.html', {'categories': categories, 'results':results})
 
@@ -120,6 +120,12 @@ def setCategoryPrefs(request):
             category = Category.objects.get(id=category_id)
             customer.categories.add(category)
     return profile(request)
+
+def contact(request):
+    return render(request,'main/contact.html')
+
+def terms(request):
+    return render(request,'main/terms.html')
         
     
 

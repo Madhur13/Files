@@ -20,6 +20,7 @@ class Offer(models.Model):
     url = models.URLField()
     category = models.ForeignKey(Category)
     mailed = models.IntegerField(default=0)
+    hot = models.IntegerField(default=1)
     created = models.DateTimeField(default=timezone.now(),null=True,blank=True)
     readonly_fields = ('created',)
 
