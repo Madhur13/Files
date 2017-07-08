@@ -15,6 +15,7 @@ class Company(models.Model):
 
 class Customer(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE)
+    phone = models.IntegerField(null=True, blank=True)
     categories = models.ManyToManyField(Category)
     balance = models.FloatField()
     referral_code = models.CharField(max_length=15,null=True, blank=True)

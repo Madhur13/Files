@@ -79,8 +79,41 @@ def profile(request):
     referrals = Customer.objects.filter(referee_code=customer.referral_code)
     categories = customer.categories.all()
     other_categories = Category.objects.exclude(pk__in=categories)
-    return render(request, 'main/profile.html', {'customer': customer, 'transactions':transactions, 'referrals':referrals, 'categories':categories, 'other_categories':other_categories})
-    
+    return render(request, 'main/profile.html', {'customer': customer, 'transactions':transactions,
+                                                 'referrals':referrals, 'categories':categories,
+                                                 'other_categories':other_categories})
+
+@login_required
+def userSettings(request):
+    customer = request.user.customer
+    if(request.method=='POST'):
+        form=UserSettingsForm(request.POST)
+        if form.is_valid():
+            phone = form.cleaned_data['phone']
+            email = form.cleaned_data['email']
+            customer.phone = phone
+            customer.email = email
+            customer.save()
+            print('user settings updated')
+            
+    return profile(request)
+
+# not yet integrated with UI because UI needs change. This page should be entirely different.
+@login_required
+def changePassword(request):
+    user = request.user
+    customer = user.customer
+    if(request.method=='POST'):
+        form = ChangePasswordForm(request.POST)
+        if form.is_valid():
+            old_password = form.cleaned_data['old_password']
+            new_password = form.cleaned_data['new_password']
+            confirm_passwrod = form.cleaned_data['confirm_password']
+            if user.check_password(old_password) and new_password==confirm_password:
+                user.set_password(new_password)
+                user.save()
+                
+    return profile(request)
         
 @login_required
 def addBankDetails(request):

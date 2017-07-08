@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^setCategoryPrefs$', views.setCategoryPrefs, name='setCategoryPrefs'),
     url(r'^contact$', views.contact, name="contact"),
     url(r'^terms$', views.terms, name="terms"),
+    url(r'^userSettings$', views.userSettings, name='userSettings'),
 ]

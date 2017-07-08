@@ -235,34 +235,37 @@ label {
                     <div class="col-sm-12">
                       <div id="content">
 
-    <form action=" " method="post" autocomplete="on">
+    <form action="{% url 'userSettings' %} " method="post" autocomplete="on">
+        
+		{%csrf_token%}
         <p>
-            <label for="username" class="icon-user"> Name</label>
-            <input type="text" name="username" id="username" required="required" placeholder="Your Name" />
+            <label for="email" class="icon-envelope"> E-mail address</label>
+            <input type="email" name="email" id="email"  required="required" value="{{customer.user.email}}"/>
         </p>
 
         <p>
-            <label for="usermail" class="icon-envelope"> E-mail address</label>
-            <input type="email" name="usermail" id="usermail" placeholder="xyz@example.com" required="required" />
+            <label for="phone" class="icon-link"> Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="09999999999" {%if customer.phone%} value="{{customer.phone}}" {%endif%} />
         </p>
+		
+		<input type="submit" value=" Save " />
+	</form>
 
-        <p>
-            <label for="usersite" class="icon-link"> Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="09876543210" />
-        </p>
-
+		
+		<form action="#" method="post" autocomplete="on">
+		{%csrf_token%}
         <h3>Change Password</h3>
          <p>
-            <label for="usersite" class="icon-link"> Old Password</label>
-            <input type="tel" name="phone" id="phone" placeholder="******" />
+            <label for="old_pass" class="icon-link"> Old Password</label>
+            <input type="text" name="old_password" id="odl_pass" placeholder="******" />
         </p>
          <p>
-            <label for="usersite" class="icon-link"> New Password</label>
-            <input type="tel" name="phone" id="phone" placeholder="******" />
+            <label for="new_pass" class="icon-link"> New Password</label>
+            <input type="text" name="new_password" id="new_pass" placeholder="******" />
         </p>
          <p>
-            <label for="usersite" class="icon-link"> Confirm Password</label>
-            <input type="tel" name="phone" id="phone" placeholder="******" />
+            <label for="confirm_pass" class="icon-link"> Confirm Password</label>
+            <input type="text" name="confirm_password" id="confirm_pass" placeholder="******" />
         </p>
 
 

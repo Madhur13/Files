@@ -43,6 +43,7 @@ def signup(request):
         if form.is_valid():
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
+            phone = form.cleaned_data['phone']
             password = form.cleaned_data['password']
             firstname = form.cleaned_data['firstname']
             lastname = form.cleaned_data['lastname']
@@ -50,12 +51,12 @@ def signup(request):
             if referral:
                 if Customer.objects.filter(referral_code__iexact=referral):
                     user = User.objects.create_user(username,email,password, first_name=firstname,last_name=lastname)
-                    customer = Customer(user=user, balance=0, referral_code='REFER'+str(user.id), referee_code=referral)
+                    customer = Customer(user=user, phone=phone, balance=0, referral_code='REFER'+str(user.id), referee_code=referral)
                 else:
                     return render(request, 'user_login/signup.html', {'form':form,'referral_error':'Invalid Referral Code!!'})
             else:
                 user = User.objects.create_user(username,email,password, first_name=firstname,last_name=lastname)
-                customer = Customer(user=user, balance=0, referral_code='REFER'+str(user.id))                   
+                customer = Customer(user=user, phone=phone, balance=0, referral_code='REFER'+str(user.id))                   
             customer.save()
             SignupTask.delay(user.email)
             #mul.delay(2,5)
