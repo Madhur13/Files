@@ -1,0 +1,208 @@
+/*Designed : vasim pathan*//* 1. Login form-----------------------------------------------------------------------------------------------------------------------------*/.login{margin-top:20px;}
+body{background: ghostwhite;font-family: 'Roboto', sans-serif;}
+
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
+
+
+/*Designed : vasim pathan*//* 1. Login form-----------------------------------------------------------------------------------------------------------------------------*/.login{margin-top:20px;}
+body{background: ghostwhite;font-family: 'Roboto', sans-serif;}
+/* Scroll to top*/
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    font-size: 28px;
+    right: 40px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 47px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background: rgba(0,153,174, 0.5);
+    color: #fff;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    /*background: #e9ebec;*/
+background:#0099ae; 
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+.row select{
+position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 25px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#fff),color-stop(50%,#f6f6f6),color-stop(52%,#eee),color-stop(100%,#f4f4f4));
+    background: -moz-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+    background: -o-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+    background: linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 3px #fff inset,0 1px 1px rgba(0,0,0,.1);
+    color: #444;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
+}
+
+.btn .btn-default,.gen
+{
+    background-color: #4fcccd;
+    border-color: #4fcccd;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 6px;
+}
+
+
+/*.btn-primary:hover,.btn-default:hover,.btn-info:hover,.btn-info:focus,.btn-default:focus,.btn-primary:focus{*/
+
+.btn .btn-default:hover,.gen:hover,.btn .btn-default:focus,.gen:focus{
+	color: #fff;
+background-color: #4fcccd;
+    border-color: #4fcccd;
+	outline: none;
+	box-shadow: none;
+	opacity: .8;
+}
+
+/* This code for drag and drop */
+	.connected, .sortable, .exclude, .handles {
+	margin: auto;
+	padding: 0;
+	width: 310px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+	.sortable.grid {
+	overflow: hidden;
+	}
+	.connected li, .sortable li, .exclude li, .handles li {
+	list-style: none;
+	border: 1px solid #CCC;
+	background: #F6F6F6;
+	font-family: "Tahoma";
+	color: #1C94C4;
+	margin: 5px;
+	padding: 7px;
+    height: 35px;
+	}
+	.handles span {
+	cursor: move;
+	}
+	li.disabled {
+	opacity: 0.5;
+	}
+	.sortable.grid li {
+	line-height: 80px;
+	float: left;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	}
+	li.highlight {
+	background: #FEE25F;
+	}
+	#connected {
+	width: 440px;
+	overflow: hidden;
+	margin: auto;
+	}
+	.connected {
+	float: left;
+	width: 200px;
+	}
+	.connected.no2 {
+	float: right;
+	}
+	li.sortable-placeholder {
+	border: 1px dashed #CCC;
+	background: none;
+	}
+/* end --Drag and drop vp*/
+

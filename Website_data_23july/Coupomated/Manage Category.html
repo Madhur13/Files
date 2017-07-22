@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://demo.coupomated.com/manage-category -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="./Manage Category_files/css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="./Manage Category_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Manage Category_files/deeplink.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./Manage Category_files/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./Manage Category_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./Manage Category_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <script async="" src="./Manage Category_files/chatra.js.download"></script><script src="./Manage Category_files/jquery.min.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./Manage Category_files/bootstrap.min.js.download"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./Manage Category_files/metisMenu.min.js.download"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./Manage Category_files/sb-admin-2.js.download"></script>
+
+	<script src="./Manage Category_files/jquery.dataTables.min.js.download"></script>
+	 <script src="./Manage Category_files/dataTables.bootstrap.min.js.download"></script>
+	 <link href="./Manage Category_files/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="./Manage Category_files/chosen.min.css" rel="stylesheet">
+	<script src="./Manage Category_files/chosen.jquery.js.download"></script>
+	 <script src="./Manage Category_files/jquery.sortable.js.download"></script>
+	 <link rel="shortcut icon" href="http://demo.coupomated.com/assets/template/images/coupiliate-fev.png">
+    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
+    <script>
+    // tooltip demo
+    $('.tooltip-demo').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+			$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});
+    </script>
+
+<title>Manage Category</title>
+<style>#chatra{visibility:hidden;opacity:0;position:fixed;max-height:95%;max-width:90%;max-width:calc(100% - 40px);transition:0.2s linear;transition-property:visibility, opacity;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:auto;height:auto;min-height:0;min-width:0;display:block;box-sizing:content-box;padding:0;margin:0} #chatra.chatra--animating{transition:350ms cubic-bezier(.04,.74,.4,.98);transition-property:height, width, max-width, max-height, top, bottom, left, right, margin-bottom, visibility, opacity, transform, -webkit-transform, -moz-transform;}#chatra.chatra--animating.chatra--mobile-widget{transition:none;} #chatra.chatra--animating.chatra--style-round{transition:none;} #chatra.chatra--side-bottom{bottom:0;} #chatra.chatra--side-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--side-left{left:0;} #chatra.chatra--side-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--side-right{right:0;} #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--side-left.chatra--expanded{bottom:0;left:20px;} #chatra.chatra--side-right.chatra--expanded{bottom:0;right:20px;} #chatra.chatra--pos-right{right:20px;} #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--pos-left{left:20px;} #chatra.chatra--pos-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--pos-center{left:50%;} #chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded){bottom:100%;margin-bottom:-40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded){top:15px;} #chatra.chatra--pos-bottom:not(.chatra--expanded){bottom:40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--pos-middle:not(.chatra--expanded){bottom:50%;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--visible{visibility:visible;opacity:1;} #chatra.chatra--mobile-widget.chatra--pos-right{right:15px;} #chatra.chatra--mobile-widget.chatra--pos-left{left:15px;} #chatra.chatra--mobile-widget.chatra--expanded{max-width:none;max-height:none;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left{left:0;} body.chatra-mobile-widget-expanded{overflow:hidden !important;height:100% !important;width:100% !important;position:fixed !important;margin:0 !important;}#chatra__iframe{left:0;top:0;width:100%;max-width:100%;height:100%;max-height:100%;margin:0;display:block;background:transparent;} #chatra.chatra--correct-odd-width{padding-left:1px;}#chatra.chatra--correct-odd-width #chatra__iframe{left:1px;width:calc(100% - 1px);}#chatra.chatra--correct-odd-height{padding-top:1px;}#chatra.chatra--correct-odd-height #chatra__iframe{top:1px;height:calc(100% - 1px);}@media print {#chatra{display:none;}}</style></head>
+<body style="    background: ghostwhite;">
+<a href="http://demo.coupomated.com/manage-category#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-circle-up"></i></a>
+
+<div id="Fragmentation" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fragmentation Message</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Confiramation Message-->
+<div id="Confirm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger btn-ok">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = '3mAERkC97H7xSh2Zg';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+<script>
+$(document).ready(function(){ 
+    $("#selecctall").change(function(){
+      $(".category").prop('checked', $(this).prop("checked"));
+      });
+});
+
+	(function(document) {
+		'use strict';
+		
+		var LightTableFilter = (function(Arr) {
+			
+			var _input;
+			
+			function _onInputEvent(e) {
+				_input = e.target;
+				var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+				Arr.forEach.call(tables, function(table) {
+					Arr.forEach.call(table.tBodies, function(tbody) {
+						Arr.forEach.call(tbody.rows, _filter);
+					});
+				});
+			}
+			
+			function _filter(row) {
+				var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+				row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+			}
+			
+			return {
+				init: function() {
+					var inputs = document.getElementsByClassName('light-table-filter');
+					Arr.forEach.call(inputs, function(input) {
+						input.oninput = _onInputEvent;
+					});
+				}
+			};
+		})(Array.prototype);
+		
+		document.addEventListener('readystatechange', function() {
+			if (document.readyState === 'complete') {
+				LightTableFilter.init();
+			}
+		});
+		
+	})(document);
+</script>
+<div id="wrapper">
+        <!-- Navigation -->
+		 <script>
+$(document).ready(function(){
+		$(".dropdown_hov").hover(function(){
+			$('.dropdown-user').show();
+		});
+		
+		$(".dropdown-user").mouseleave(function(){
+			$(this).hide();
+		});
+		
+		$("body").click(function(){
+				$('.dropdown-user').hide();
+		});
+});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                				<a class="navbar-brand" href="http://demo.coupomated.com/Dashboard"><img src="./Manage Category_files/aceea-coupomated-1-.png" alt="logo" style="margin-top: -4px;width: 140px;"> </a>
+				            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				<li><a href="http://demo.coupomated.com/my-subscription">Subscribe Here</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.coupomated.com/manage-category#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+					
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Global Notification
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Personal Notification
+								
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="http://demo.coupomated.com/notification">
+                                <strong>See All Notification</strong>
+                                <i class="fa fa-angle-right"></i>
+							</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                    <a class="dropdown-toggle dropdown_hov" data-toggle="dropdown" href="http://demo.coupomated.com/manage-category#">
+						<span style="float:right;"><i class="fa fa-user fa-fw"></i>Welcome  ! </span><br>
+						
+						<span>(Plan: Starter -
+						<span style="color: #3c763d;font-weight: 600;">Active</span> ) <i class="fa fa-caret-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="http://demo.coupomated.com/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+						</li>
+					</ul>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu" style="
+					margin-top: 18px;">
+                       		
+						<li><a href="http://demo.coupomated.com/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+						<li>
+							                            <a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-sitemap fa-fw"></i> Relationship<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level  collapse">
+								
+								<li><a href="http://demo.coupomated.com/manage-network">Manage Networks </a></li>
+								 
+								<li><a href="http://demo.coupomated.com/network-preferences">Network Preferences</a></li>
+								
+								<li><a href="http://demo.coupomated.com/merchant-network-matrix">Merchant – Network Matrix</a></li>
+								
+                            </ul>
+                        </li>
+						<li class="active">
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-rss fa-fw"></i> Feed Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse in">
+								<li><a href="http://demo.coupomated.com/api-keys">API Keys  </a></li>
+								<li><a href="http://demo.coupomated.com/manage-merchant">Manage Merchants </a></li>
+									<li><a href="http://demo.coupomated.com/manage-category" class="active">Manage Categories</a> </li>
+									<li><a href="http://demo.coupomated.com/manage-offer-types">Manage Offer Types</a></li>
+									<li><a href="http://demo.coupomated.com/manage-datafeed-fields">Manage Datafeed Fields</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-list-alt fa-fw"></i> Manage Content Uniqueness<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/word-replacement">Word Replacement  </a></li>
+																		<li><a href="http://demo.coupomated.com/word-spinner">Word Spinner  </a></li>
+																		
+																		<li><a href="http://demo.coupomated.com/reconstruct-coupon-text">Reconstruct Coupon Text </a> </li>
+																</ul>
+						</li>
+						
+						
+												 
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-wordpress fa-fw"></i> WordPress Configuration<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level  collapse">
+								<li><a href="http://demo.coupomated.com/plugin-download">Plugin Download   </a></li>
+								<li><a href="http://demo.coupomated.com/merchants-master">Merchants Master   </a></li>
+								<li><a href="http://demo.coupomated.com/categories-master">Categories Master   </a> </li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-money fa-fw"></i> Coupilliate Reports<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/order-detail-report">Order Detail Report    </a></li>
+								<li><a href="http://demo.coupomated.com/earning-report"> Earning Report </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-tasks fa-fw"></i> Links &amp; Tools<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">                               
+								<li><a href="http://demo.coupomated.com/browse-coupons">Browse Coupons   </a></li>
+									<li><a href="http://demo.coupomated.com/merchants-hub">Merchants Hub </a></li>
+									<li><a href="http://demo.coupomated.com/network-hub">Network Hub </a></li>
+									<li><a href="http://demo.coupomated.com/wordpress-demo">WordPress Demo</a></li> 
+									<li><a href="http://demo.coupomated.com/link-builder">Link Builder </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-puzzle-piece fa-fw"></i> Add-on Services<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+							
+																		<li><a href="http://demo.coupomated.com/offer-banners">Offer Banners    </a></li>
+																	<li><a href="http://demo.coupomated.com/redirect-script">Redirect Script    </a></li>
+																</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-life-ring fa-fw"></i> Support<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/user-faq">FAQ</a></li>
+								<li><a href="http://demo.coupomated.com/contactus">Contact Us</a></li>
+								<li><a href="http://demo.coupomated.com/notification"> Notifications</a></li>
+							</ul>
+						</li>
+
+						<li>                            
+							<a href="http://demo.coupomated.com/manage-category#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>                            
+							<ul class="nav nav-second-level collapse">                               								
+								<li><a href="http://demo.coupomated.com/account-information">Account Information  </a></li>
+								<li><a href="http://demo.coupomated.com/my-subscription">My Subscription </a></li>
+								
+								<li><a href="http://demo.coupomated.com/logout">Logout</a></li>                          
+							                        
+							</ul>                          
+						</li>	
+						
+						
+		
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>         <!-- Page Content -->
+        <div id="page-wrapper" style="min-height: 562px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <style>
+.faqp{
+float: right;
+padding: 3px;
+border: 1px solid #337ab7;
+border-radius: 5px;
+text-decoration: underline;
+}
+</style>
+<div class="col-lg-12">
+	<h1 class="page-header">Manage categories</h1> 
+		<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	Refer here the list of coupon categories; by default all categories are selected.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	You can deselect category that you do not require. And coupons from that category will not be pushed to your website.</p>
+<br>
+	
+	</div> 
+                </div>
+				<div class="row">
+					
+			 
+			<form action="http://demo.coupomated.com/Feed/submit_category" name="registrationform" method="post" accept-charset="utf-8">
+               				
+				
+						
+					
+					<table class="table table-striped table-bordered cats-table" cellspacing="0" width="100%">
+					<thead>
+						<tr id="tr1">
+							<th width="13%"><div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+								<label>
+									<input type="checkbox" id="selecctall">
+									<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span><b>Select All</b>
+								</label>
+							</div></th>
+							<th>Category Name</th>
+							<th>Coupon Count</th>
+							
+						</tr>
+					</thead>
+						
+												
+							<tbody><tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="101" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Electronics</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="102" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Cameras &amp; Accessories</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="103" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Audio, Video &amp; Home Entertainment</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="104" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Computer Accessories</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="105" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Laptops and  Desktops</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="106" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Mobile &amp; Tablets</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="107" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Mobiles &amp; Tablet Accessories</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="108" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Televisions</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="109" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Fashion</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="110" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Fashion Accessories</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="111" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Clothing</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="112" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Jewellery</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="113" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Nightwear &amp; Lingerie</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="114" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Sunglasses &amp; Contact Lens</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="115" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Watches</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="116" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Footwear</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="117" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Luggage &amp; Bags</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="118" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Baby &amp; Kids</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="119" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Baby Footwear</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="120" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Baby Care</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="121" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Baby &amp; Kids Clothing</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="122" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Diapering</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="123" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Baby &amp; Kids Fashion Accessories</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="124" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Toys</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="125" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Home &amp; Kitchen</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="126" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Furniture</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="127" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Home Decor &amp; Furnishing</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="128" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Home Appliances</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="129" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Kitchen Appliances</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="130" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Kitchenware &amp; Dinnerware</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="131" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Beauty, Personal &amp; Health Care</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="132" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Beauty &amp; Personal Care</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="133" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Perfumes &amp; Deodorants</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="134" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Personal Grooming Appliances</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="135" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Sports &amp; Fitness Equipment</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="136" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Medicine &amp; Health Supplement</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="137" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Health Care Devices</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="138" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Recharge &amp; Bill Payment</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="139" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Mobile, DTH Recharge</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="140" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Bill Payment</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="141" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Travel</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="142" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Bus</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="143" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Flights</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="144" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Holiday Packages</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="145" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Hotels</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="146" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Cab &amp; Auto</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="147" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Grocery, Food &amp; Beverages</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="148" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Food &amp; Beverages</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="149" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Chocolates, Cakes &amp; Sweets</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="150" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Restaurants</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="151" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Grocery</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="152" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Office Supplies &amp; Stationaries</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="153" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Education And Stationaries</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="154" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Books</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="155" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Office Supplies</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="156" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Custom Products</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="157" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Entertainment, Media &amp; Software</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="158" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Music, Movies and Ticket Booking</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="159" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Web Hosting &amp; Domains</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="160" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Software</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="161" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Games &amp; Entertainment</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="162" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Flowers &amp; Gift Cards</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="163" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Gifts &amp; Flowers</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="164" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Gift Cards</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="165" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Others</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="166" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Automotive</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="167" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Business</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="168" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Wallet &amp; Payment Gateways</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="169" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Gardening Products</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="170" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;General Services</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="171" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Industrial Supplies</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="172" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Animals &amp; Pet Supplies</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="173" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>Bank Specific Offers</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="174" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;HDFC Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="175" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;ICICI Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="176" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;SBI Card</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="177" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;AXIS Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="178" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Citibank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="179" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Kotak Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="180" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;American Express Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="181" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Deutsche Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="182" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;IndusInd Bank</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="183" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Standard Chartered</td>
+								<td>0</td>
+							</tr>
+													
+							<tr>							  
+								<td>
+									<div class="checkbox" style="margin-top: 0px; margin-bottom: 0px; ">
+										<label>
+											<input type="checkbox" class="category" name="category[]" value="184" checked="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+										
+								</td>								
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Yes Bank</td>
+								<td>0</td>
+							</tr>
+												
+				   </tbody></table>
+				   
+				    <div class="form-group">
+														<input id="btn_update" name="btn_update" type="submit" class="btn btn-info" value="Update">
+												
+                   
+                </div>
+				   <!--?//=form_close();?-->
+                </form>                
+            
+				
+				</div>
+				<style>
+.faqcat{font-size: 30px;}
+</style>                <!-- /.row -->
+				
+            </div>
+            <!-- /.container-fluid -->
+			</div>
+			<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+	
+$(document).ready(function(){
+	$('.faqp a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+		
+	    var target = this.hash,
+	    $target = $(target);
+		
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+  </script>
+<style>
+	#footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	color: #fff;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+	text-align: center;
+	border-top: 1px solid #A9A9A9;
+		
+	}
+.footer-menu{
+	clear: none;
+    display: block;
+      padding-top: 22px;
+    margin: 0;
+}
+	.footer-menu li{ display:block;float:left;position: relative;    list-style: none;
+    margin: 0;
+    padding: 0;}
+	.footer-menu li a {
+    padding: 30px 20px 32px;color: #fff;
+	}
+	.text{padding:12px;}
+	
+</style>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="footer-menu">
+						                            <li><a href="http://demo.coupomated.com/about-us">About Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/features">Features </a></li>
+			                            <li><a href="http://demo.coupomated.com/plans">Plans </a></li>
+			                            <li><a href="http://demo.coupomated.com/contact-us">Contact Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/terms-and-privacy-policy">Terms &amp; Privacy Policy </a></li>
+			                            <li><a href="http://demo.coupomated.com/request-a-demo">Request a Demo </a></li>
+			                            <li><a href="http://demo.coupomated.com/services">Services </a></li>
+			                            <li><a href="http://demo.coupomated.com/how-it-works">How It Works </a></li>
+			                            <li><a href="http://demo.coupomated.com/faq">FAQ  </a></li>
+							</ul>
+			</div>
+			<div class="col-md-12 text">
+				<p>© 2016 - Coupomated.com. All Rights Reserved.</p>
+				<p>Made in India with Passion</p>
+			</div>
+			</div>
+		</div>
+<script type="text/javascript">	
+
+$(document).ready(function()
+{
+	$('#all_cats').click(function(){
+            if($(this).is(":checked"))
+			{
+				$('#all_cats').val('Y');
+				$('#all_cats').attr('checked','checked');
+				var catsval = $('#all_cats').val()
+				
+                $.ajax({		
+				type: "POST",		
+				url: "http://demo.coupomated.com/Feed/UpdateAllCats",		
+				data:{				
+					catsval: catsval
+				},		
+				cache: false,		
+				success: function(result)
+				{			
+					$('#Fragmentation').modal("show");
+					$('#Fragmentation .modal-body p').text("Update Successfully.");
+					$('#Fragmentation .modal-footer button').on('click', function (e) 
+					{
+						var $target = $(e.target);
+						$(this).closest('.modal').on('hidden.bs.modal', function (e) 
+						{
+							location.reload();
+						});
+					});
+				}		
+				});		
+				
+			   
+            }
+            else if($(this).is(":not(:checked)"))
+			{
+              $('#all_cats').val('N');
+			
+			  var catsval = $('#all_cats').val()
+				
+                $.ajax({		
+				type: "POST",		
+				url: "http://demo.coupomated.com/Feed/UpdateAllCats",		
+				data:{				
+					catsval: catsval
+				},		
+				cache: false,		
+				success: function(result)
+				{			
+				
+					$('#Fragmentation').modal("show");
+					$('#Fragmentation .modal-body p').text("Update Successfully.");
+					$('#Fragmentation .modal-footer button').on('click', function (e) 
+					{
+						var $target = $(e.target);
+						$(this).closest('.modal').on('hidden.bs.modal', function (e) 
+						{
+							location.reload();
+						});
+					});
+				}		
+				});		
+			  
+			    
+            }
+        });
+        });
+</script>
+
+</footer></div><div id="chatra" class="chatra--style-round chatra--side-right chatra--pos-bottom chatra--visible" style="width: 70px; height: 70px; transform: none; z-index: 9999;"><iframe frameborder="0" id="chatra__iframe" allowtransparency="true" src="./Manage Category_files/saved_resource.html" style="position: absolute;"></iframe></div></body></html>
