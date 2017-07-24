@@ -1,0 +1,674 @@
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ git clone htttps://github.com/heroku/python-getting-started.git
+Cloning into 'python-getting-started'...
+fatal: Unable to find remote helper for 'htttps'
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ git clone https://github.com/heroku/python-getting-started.git
+Cloning into 'python-getting-started'...
+remote: Counting objects: 297, done.
+remote: Total 297 (delta 0), reused 0 (delta 0), pack-reused 297
+Receiving objects: 100% (297/297), 45.77 KiB | 50.00 KiB/s, done.
+Resolving deltas: 100% (145/145), done.
+Checking connectivity... done.
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ heroku create
+Enter your Heroku credentials.
+Email: madhuraggarwal13@gmail.com
+Password (typing will be hidden):
+ !    Login is currently incompatible with git bash/cygwin
+ !    In the meantime, login via cmd.exe
+ !    https://github.com/heroku/cli/issues/84
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ git push heroku master
+fatal: Not a git repository (or any of the parent directories): .git
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ ls
+_netrc
+AppData/
+'Application Data'@
+Contacts/
+Cookies@
+cost.m
+Desktop/
+Documents/
+Downloads/
+Favorites/
+lib/
+Links/
+'Local Settings'@
+Music/
+'My Documents'@
+negative_data.txt
+NetHood@
+ntuser.dat
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+ntuser.dat{68e8f11d-ddbe-11e6-93f8-00269eb4561a}.TM.blf
+ntuser.dat{68e8f11d-ddbe-11e6-93f8-00269eb4561a}.TMContainer00000000000000000001.regtrans-ms
+ntuser.dat{68e8f11d-ddbe-11e6-93f8-00269eb4561a}.TMContainer00000000000000000002.regtrans-ms
+ntuser.dat{781ac14c-d691-11e6-a523-00269eb4561a}.TM.blf
+ntuser.dat{781ac14c-d691-11e6-a523-00269eb4561a}.TMContainer00000000000000000001.regtrans-ms
+ntuser.dat{781ac14c-d691-11e6-a523-00269eb4561a}.TMContainer00000000000000000002.regtrans-ms
+ntuser.dat{877728e2-1af0-11e7-95c3-00269eb4561a}.TM.blf
+ntuser.dat{877728e2-1af0-11e7-95c3-00269eb4561a}.TMContainer00000000000000000001.regtrans-ms
+ntuser.dat{877728e2-1af0-11e7-95c3-00269eb4561a}.TMContainer00000000000000000002.regtrans-ms
+ntuser.dat{daeb2ae4-faaa-11e6-b505-00269eb4561a}.TM.blf
+ntuser.dat{daeb2ae4-faaa-11e6-b505-00269eb4561a}.TMContainer00000000000000000001.regtrans-ms
+ntuser.dat{daeb2ae4-faaa-11e6-b505-00269eb4561a}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+Pictures/
+positive_data.txt
+PrintHood@
+python-getting-started/
+Recent@
+'Saved Games'/
+Searches/
+SendTo@
+sentiment.m
+sorted.txt
+'Start Menu'@
+Templates@
+Videos/
+
+MADHUR@MADHUR-PC MINGW64 ~
+$ cd python-getting-started/
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku create
+Creating app... done, stark-reef-61252
+https://stark-reef-61252.herokuapp.com/ | https://git.heroku.com/stark-reef-61252.git
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git push heroku master
+Counting objects: 287, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (130/130), done.
+Writing objects: 100% (287/287), 44.49 KiB | 0 bytes/s, done.
+Total 287 (delta 138), reused 287 (delta 138)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.0
+remote: -----> Installing pip
+remote: -----> Installing requirements with pip
+remote:        Collecting dj-database-url==0.4.1 (from -r /tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/requirements.txt (line 1))
+remote:          Downloading dj-database-url-0.4.1.tar.gz
+remote:        Collecting Django==1.9.7 (from -r /tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/requirements.txt (line 2))
+remote:          Downloading Django-1.9.7-py2.py3-none-any.whl (6.6MB)
+remote:        Collecting gunicorn==19.6.0 (from -r /tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/requirements.txt (line 3))
+remote:          Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)
+remote:        Collecting psycopg2==2.6.2 (from -r /tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/requirements.txt (line 4))
+remote:          Downloading psycopg2-2.6.2.tar.gz (376kB)
+remote:        Collecting whitenoise==2.0.6 (from -r /tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/requirements.txt (line 5))
+remote:          Downloading whitenoise-2.0.6-py2.py3-none-any.whl
+remote:        Installing collected packages: dj-database-url, Django, gunicorn, psycopg2, whitenoise
+remote:          Running setup.py install for dj-database-url: started
+remote:            Running setup.py install for dj-database-url: finished with status 'done'
+remote:          Running setup.py install for psycopg2: started
+remote:            Running setup.py install for psycopg2: finished with status 'done'
+remote:        Successfully installed Django-1.9.7 dj-database-url-0.4.1 gunicorn-19.6.0 psycopg2-2.6.2 whitenoise-2.0.6
+remote:
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        58 static files copied to '/tmp/build_a4ba8d4efc9b4536ec452c9b732b049d/gettingstarted/staticfiles', 58 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 62.7M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://stark-reef-61252.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy.... done.
+To https://git.heroku.com/stark-reef-61252.git
+ * [new branch]      master -> master
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku ps:scale web=1
+Scaling dynos... done, now running web at 1:Free
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku open
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku logs --tail
+2017-05-22T07:12:19.585228+00:00 app[api]: Initial release by user madhuraggarwal13@gmail.com
+2017-05-22T07:12:19.585228+00:00 app[api]: Release v1 created by user madhuraggarwal13@gmail.com
+2017-05-22T07:12:19.874127+00:00 app[api]: Enable Logplex by user madhuraggarwal13@gmail.com
+2017-05-22T07:12:19.874127+00:00 app[api]: Release v2 created by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:01.000000+00:00 app[api]: Build started by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:41.575209+00:00 app[api]: Attach DATABASE (@ref:postgresql-concentric-58450) by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:41.575209+00:00 app[api]: Release v3 created by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:41.904251+00:00 app[api]: Release v4 created by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:41.917823+00:00 app[api]: Scaled to web@1:Free by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:41.904251+00:00 app[api]: Deploy bd901235 by user madhuraggarwal13@gmail.com
+2017-05-22T07:13:01.000000+00:00 app[api]: Build succeeded
+2017-05-22T07:13:49.780179+00:00 heroku[web.1]: Starting process with command `gunicorn gettingstarted.wsgi --log-file -`
+2017-05-22T07:13:52.431019+00:00 app[web.1]: [2017-05-22 07:13:52 +0000] [4] [INFO] Starting gunicorn 19.6.0
+2017-05-22T07:13:52.431609+00:00 app[web.1]: [2017-05-22 07:13:52 +0000] [4] [INFO] Listening at: http://0.0.0.0:30246 (4)
+2017-05-22T07:13:52.431705+00:00 app[web.1]: [2017-05-22 07:13:52 +0000] [4] [INFO] Using worker: sync
+2017-05-22T07:13:52.435621+00:00 app[web.1]: [2017-05-22 07:13:52 +0000] [8] [INFO] Booting worker with pid: 8
+2017-05-22T07:13:52.461087+00:00 app[web.1]: [2017-05-22 07:13:52 +0000] [9] [INFO] Booting worker with pid: 9
+2017-05-22T07:13:53.517331+00:00 heroku[web.1]: State changed from starting to up
+2017-05-22T07:14:42.541531+00:00 heroku[router]: at=info method=GET path="/" host=stark-reef-61252.herokuapp.com request_id=5c40653e-19de-4bc0-8c0e-096ef3e3d42c fwd="139.167.14.178" dyno=web.1 connect=1ms service=43ms status=200 bytes=7658 protocol=https
+2017-05-22T07:14:45.001347+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=stark-reef-61252.herokuapp.com request_id=85556b87-4d1b-47ae-a810-4c2f62309a75 fwd="139.167.14.178" dyno=web.1 connect=0ms service=3ms status=200 bytes=2476 protocol=https
+2017-05-22T07:14:52.254237+00:00 app[web.1]: Not Found: /favicon.ico
+2017-05-22T07:14:52.260716+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stark-reef-61252.herokuapp.com request_id=bc86224e-889d-4934-b28a-db44eca3b1b9 fwd="139.167.14.178" dyno=web.1 connect=0ms service=47ms status=404 bytes=2392 protocol=https
+2017-05-22T07:16:26.109051+00:00 heroku[router]: at=info method=GET path="/" host=stark-reef-61252.herokuapp.com request_id=8f35344c-2805-4d39-b14d-1123b9cce54c fwd="139.167.14.178" dyno=web.1 connect=0ms service=14ms status=200 bytes=7658 protocol=https
+2017-05-22T07:16:26.971424+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=stark-reef-61252.herokuapp.com request_id=739d2c30-0a3d-4ba5-9897-33731d8f2a17 fwd="139.167.14.178" dyno=web.1 connect=0ms service=2ms status=304 bytes=110 protocol=https
+2017-05-22T07:17:06.740998+00:00 heroku[router]: at=info method=GET path="/" host=stark-reef-61252.herokuapp.com request_id=3a8e909a-a291-4ce3-a9d7-418d0543159b fwd="139.167.14.178" dyno=web.1 connect=0ms service=5ms status=200 bytes=7658 protocol=https
+2017-05-22T07:17:07.725051+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=stark-reef-61252.herokuapp.com request_id=b1464f65-618f-48e7-93ea-0950f7764b70 fwd="139.167.14.178" dyno=web.1 connect=0ms service=4ms status=304 bytes=110 protocol=https
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku ps
+Free dyno hours quota remaining this month: 550h 0m (100%)
+For more information on dyno sleeping and how to upgrade, see:
+https://devcenter.heroku.com/articles/dyno-sleeping
+
+=== web (Free): gunicorn gettingstarted.wsgi --log-file - (1)
+web.1: up 2017/05/22 12:43:53 +0530 (~ 6m ago)
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku local  web
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+12:58:37 PM web.1 |  Traceback (most recent call last):
+12:58:37 PM web.1 |    File "c:\python\python36\lib\runpy.py", line 193, in _run_module_as_main
+12:58:37 PM web.1 |      "__main__", mod_spec)
+12:58:37 PM web.1 |    File "c:\python\python36\lib\runpy.py", line 85, in _run_code
+12:58:37 PM web.1 |      exec(code, run_globals)
+12:58:37 PM web.1 |    File "C:\Python\Python36\Scripts\gunicorn.exe\__main__.py", line 5, in <module>
+12:58:37 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\app\wsgiapp.py", line 10, in <module>
+12:58:37 PM web.1 |      from gunicorn.app.base import Application
+12:58:37 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\app\base.py", line 12, in <module>
+12:58:37 PM web.1 |      from gunicorn import util
+12:58:37 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\util.py", line 9, in <module>
+12:58:37 PM web.1 |      import fcntl
+12:58:37 PM web.1 |  ModuleNotFoundError: No module named 'fcntl'
+[DONE] Killing all processes with signal  null
+12:58:37 PM web.1 Exited with exit code 1
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku local web -f Procfile.windows
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+12:59:57 PM web.1 |  [22/May/2017 12:59:57] "GET / HTTP/1.1" 200 7448
+12:59:59 PM web.1 |  [22/May/2017 12:59:59] "GET /static/lang-logo.png HTTP/1.1" 200 2217
+1:00:01 PM web.1 |  Not Found: /favicon.ico
+1:00:01 PM web.1 |  [22/May/2017 13:00:01] "GET /favicon.ico HTTP/1.1" 404 2200
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ pip install -r requirements
+Could not open requirements file: [Errno 2] No such file or directory: 'requirements'
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ pip install -r requirements.txt
+Requirement already satisfied: dj-database-url==0.4.1 in c:\python\python36\lib\site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: Django==1.11.1 in c:\python\python36\lib\site-packages (from -r requirements.txt (line 2))
+Requirement already satisfied: gunicorn==19.6.0 in c:\python\python36\lib\site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: psycopg2==2.6.2 in c:\python\python36\lib\site-packages (from -r requirements.txt (line 4))
+Requirement already satisfied: whitenoise==2.0.6 in c:\python\python36\lib\site-packages (from -r requirements.txt (line 5))
+Collecting requests==2.9.1 (from -r requirements.txt (line 6))
+  Downloading requests-2.9.1-py2.py3-none-any.whl (501kB)
+Requirement already satisfied: pytz in c:\python\python36\lib\site-packages (from Django==1.11.1->-r requirements.txt (line 2))
+Installing collected packages: requests
+Successfully installed requests-2.9.1
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku local
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+1:05:16 PM web.1 |  Traceback (most recent call last):
+1:05:16 PM web.1 |    File "c:\python\python36\lib\runpy.py", line 193, in _run_module_as_main
+1:05:16 PM web.1 |      "__main__", mod_spec)
+1:05:16 PM web.1 |    File "c:\python\python36\lib\runpy.py", line 85, in _run_code
+1:05:16 PM web.1 |      exec(code, run_globals)
+1:05:16 PM web.1 |    File "C:\Python\Python36\Scripts\gunicorn.exe\__main__.py", line 5, in <module>
+1:05:16 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\app\wsgiapp.py", line 10, in <module>
+1:05:16 PM web.1 |      from gunicorn.app.base import Application
+1:05:16 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\app\base.py", line 12, in <module>
+1:05:16 PM web.1 |      from gunicorn import util
+1:05:16 PM web.1 |    File "c:\python\python36\lib\site-packages\gunicorn\util.py", line 9, in <module>
+1:05:16 PM web.1 |      import fcntl
+1:05:16 PM web.1 |  ModuleNotFoundError: No module named 'fcntl'
+[DONE] Killing all processes with signal  null
+1:05:16 PM web.1 Exited with exit code 1
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku local web -f Procfile.windows
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+1:06:25 PM web.1 |  Internal Server Error: /
+1:06:25 PM web.1 |  Traceback (most recent call last):
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 137, in _new_conn
+1:06:25 PM web.1 |      (self.host, self.port), self.timeout, **extra_kw)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\util\connection.py", line 67, in create_connection
+1:06:25 PM web.1 |      for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\socket.py", line 743, in getaddrinfo
+1:06:25 PM web.1 |      for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+1:06:25 PM web.1 |  socket.gaierror: [Errno 11004] getaddrinfo failed
+1:06:25 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:25 PM web.1 |  Traceback (most recent call last):
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 559, in urlopen
+1:06:25 PM web.1 |      body=body, headers=headers)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 353, in _make_request
+1:06:25 PM web.1 |      conn.request(method, url, **httplib_request_kw)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1239, in request
+1:06:25 PM web.1 |      self._send_request(method, url, body, headers, encode_chunked)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1285, in _send_request
+1:06:25 PM web.1 |      self.endheaders(body, encode_chunked=encode_chunked)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1234, in endheaders
+1:06:25 PM web.1 |      self._send_output(message_body, encode_chunked=encode_chunked)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1026, in _send_output
+1:06:25 PM web.1 |      self.send(msg)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 964, in send
+1:06:25 PM web.1 |      self.connect()
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 162, in connect
+1:06:25 PM web.1 |      conn = self._new_conn()
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 146, in _new_conn
+1:06:25 PM web.1 |      self, "Failed to establish a new connection: %s" % e)
+1:06:25 PM web.1 |  requests.packages.urllib3.exceptions.NewConnectionError: <requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004F159E8>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed
+1:06:25 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:25 PM web.1 |  Traceback (most recent call last):
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\adapters.py", line 376, in send
+1:06:25 PM web.1 |      timeout=timeout
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 609, in urlopen
+1:06:25 PM web.1 |      _stacktrace=sys.exc_info()[2])
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\util\retry.py", line 273, in increment
+1:06:25 PM web.1 |      raise MaxRetryError(_pool, url, error or ResponseError(cause))
+1:06:25 PM web.1 |  requests.packages.urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='httpbin.irg', port=80): Max retries exceeded with url: /status/418 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004F159E8>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+1:06:25 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:25 PM web.1 |  Traceback (most recent call last):
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+1:06:25 PM web.1 |      response = get_response(request)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+1:06:25 PM web.1 |      response = self._get_response(request)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+1:06:25 PM web.1 |      response = self.process_exception_by_middleware(e, request)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+1:06:25 PM web.1 |      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+1:06:25 PM web.1 |    File "C:\Users\MADHUR\python-getting-started\hello\views.py", line 9, in index
+1:06:25 PM web.1 |      r = requests.get('http://httpbin.irg/status/418')
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\api.py", line 67, in get
+1:06:25 PM web.1 |      return request('get', url, params=params, **kwargs)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\api.py", line 53, in request
+1:06:25 PM web.1 |      return session.request(method=method, url=url, **kwargs)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\sessions.py", line 468, in request
+1:06:25 PM web.1 |      resp = self.send(prep, **send_kwargs)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\sessions.py", line 576, in send
+1:06:25 PM web.1 |      r = adapter.send(request, **kwargs)
+1:06:25 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\adapters.py", line 437, in send
+1:06:25 PM web.1 |      raise ConnectionError(e, request=request)
+1:06:25 PM web.1 |  requests.exceptions.ConnectionError: HTTPConnectionPool(host='httpbin.irg', port=80): Max retries exceeded with url: /status/418 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004F159E8>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+1:06:25 PM web.1 |  [22/May/2017 13:06:25] "GET / HTTP/1.1" 500 168305
+1:06:40 PM web.1 |  Internal Server Error: /
+1:06:40 PM web.1 |  Traceback (most recent call last):
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 137, in _new_conn
+1:06:40 PM web.1 |      (self.host, self.port), self.timeout, **extra_kw)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\util\connection.py", line 67, in create_connection
+1:06:40 PM web.1 |      for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\socket.py", line 743, in getaddrinfo
+1:06:40 PM web.1 |      for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+1:06:40 PM web.1 |  socket.gaierror: [Errno 11004] getaddrinfo failed
+1:06:40 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:40 PM web.1 |  Traceback (most recent call last):
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 559, in urlopen
+1:06:40 PM web.1 |      body=body, headers=headers)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 353, in _make_request
+1:06:40 PM web.1 |      conn.request(method, url, **httplib_request_kw)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1239, in request
+1:06:40 PM web.1 |      self._send_request(method, url, body, headers, encode_chunked)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1285, in _send_request
+1:06:40 PM web.1 |      self.endheaders(body, encode_chunked=encode_chunked)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1234, in endheaders
+1:06:40 PM web.1 |      self._send_output(message_body, encode_chunked=encode_chunked)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 1026, in _send_output
+1:06:40 PM web.1 |      self.send(msg)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\http\client.py", line 964, in send
+1:06:40 PM web.1 |      self.connect()
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 162, in connect
+1:06:40 PM web.1 |      conn = self._new_conn()
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connection.py", line 146, in _new_conn
+1:06:40 PM web.1 |      self, "Failed to establish a new connection: %s" % e)
+1:06:40 PM web.1 |  requests.packages.urllib3.exceptions.NewConnectionError: <requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004FF1320>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed
+1:06:40 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:40 PM web.1 |  Traceback (most recent call last):
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\adapters.py", line 376, in send
+1:06:40 PM web.1 |      timeout=timeout
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\connectionpool.py", line 609, in urlopen
+1:06:40 PM web.1 |      _stacktrace=sys.exc_info()[2])
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\packages\urllib3\util\retry.py", line 273, in increment
+1:06:40 PM web.1 |      raise MaxRetryError(_pool, url, error or ResponseError(cause))
+1:06:40 PM web.1 |  requests.packages.urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='httpbin.irg', port=80): Max retries exceeded with url: /status/418 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004FF1320>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+1:06:40 PM web.1 |  During handling of the above exception, another exception occurred:
+1:06:40 PM web.1 |  Traceback (most recent call last):
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+1:06:40 PM web.1 |      response = get_response(request)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+1:06:40 PM web.1 |      response = self._get_response(request)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+1:06:40 PM web.1 |      response = self.process_exception_by_middleware(e, request)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+1:06:40 PM web.1 |      response = wrapped_callback(request, *callback_args, **callback_kwargs)
+1:06:40 PM web.1 |    File "C:\Users\MADHUR\python-getting-started\hello\views.py", line 9, in index
+1:06:40 PM web.1 |      r = requests.get('http://httpbin.irg/status/418')
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\api.py", line 67, in get
+1:06:40 PM web.1 |      return request('get', url, params=params, **kwargs)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\api.py", line 53, in request
+1:06:40 PM web.1 |      return session.request(method=method, url=url, **kwargs)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\sessions.py", line 468, in request
+1:06:40 PM web.1 |      resp = self.send(prep, **send_kwargs)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\sessions.py", line 576, in send
+1:06:40 PM web.1 |      r = adapter.send(request, **kwargs)
+1:06:40 PM web.1 |    File "C:\Python\Python36\lib\site-packages\requests\adapters.py", line 437, in send
+1:06:40 PM web.1 |      raise ConnectionError(e, request=request)
+1:06:40 PM web.1 |  requests.exceptions.ConnectionError: HTTPConnectionPool(host='httpbin.irg', port=80): Max retries exceeded with url: /status/418 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004FF1320>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+1:06:40 PM web.1 |  [22/May/2017 13:06:40] "GET / HTTP/1.1" 500 168305
+1:07:42 PM web.1 |  Performing system checks...
+1:07:42 PM web.1 |  System check identified no issues (0 silenced).
+1:07:42 PM web.1 |  You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, hello, sessions.
+1:07:42 PM web.1 |  Run 'python manage.py migrate' to apply them.
+1:07:42 PM web.1 |  May 22, 2017 - 13:06:00
+1:07:42 PM web.1 |  Django version 1.11.1, using settings 'gettingstarted.settings'
+1:07:42 PM web.1 |  Starting development server at http://0.0.0.0:5000/
+1:07:42 PM web.1 |  Quit the server with CTRL-BREAK.
+1:07:48 PM web.1 |  Performing system checks...
+1:07:48 PM web.1 |  System check identified no issues (0 silenced).
+1:07:48 PM web.1 |  You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, hello, sessions.
+1:07:48 PM web.1 |  Run 'python manage.py migrate' to apply them.
+1:07:48 PM web.1 |  May 22, 2017 - 13:07:43
+1:07:48 PM web.1 |  Django version 1.11.1, using settings 'gettingstarted.settings'
+1:07:48 PM web.1 |  Starting development server at http://0.0.0.0:5000/
+1:07:48 PM web.1 |  Quit the server with CTRL-BREAK.
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku local web -f Procfile.windows
+[OKAY] Loaded ENV .env File as KEY=VALUE Format
+1:08:03 PM web.1 |  Performing system checks...
+1:08:03 PM web.1 |  System check identified no issues (0 silenced).
+1:08:03 PM web.1 |  You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, hello, sessions.
+1:08:03 PM web.1 |  Run 'python manage.py migrate' to apply them.
+1:08:03 PM web.1 |  May 22, 2017 - 13:07:59
+1:08:03 PM web.1 |  Django version 1.11.1, using settings 'gettingstarted.settings'
+1:08:03 PM web.1 |  Starting development server at http://0.0.0.0:5000/
+1:08:03 PM web.1 |  Quit the server with CTRL-BREAK.
+1:08:03 PM web.1 |  <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en-IN"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script>(function(){window.google={kEI:'XZUiWcSfCIvovgT33pWQCQ',kEXPI:'201760,1353136,1353763,3700317,3700347,3700407,3700410,3700425,4029370,4029815,4031109,4032677,4036527,4039268,4043492,4045841,4048347,4063220,4065787,407236
+1:08:03 PM web.1 |  >  4,4072776,4076095,4076999,4078430,4078767,4081039,4081164,4083496,4085472,4090550,4090553,4094251,4094544,4095910,4096324,4096464,4097153,4097195,4097203,4097922,4097929,4097951,4098052,4098096,4098733,4098740,4098752,4100174,4100460,4101429,4101430,4101437,4101750,4102238,4103254,4103470,4103475,4103845,4104076,4104204,4105085,4105113,4105178,4105240,4105317,4105321,4106606,4106949,4107417,4107628,4108538,4108540,4109040,4109316,4109341,4109439,4109489,4109498,4109524,4109535,4109631,4110235,41
+1:08:03 PM web.1 |  >  10361,4110381,4110656,4110939,4111093,4111128,4111422,4111612,4112009,4112041,4112049,4112149,4112245,4112250,4112317,4112319,8503585,8508229,8508607,8508931,8509037,8509091,8509373,8510343,10200083,19002309,19002311,41027340',authuser:0,kscs:'c9c918f0_24'};google.kHL='en-IN';})();(function(){google.lc=[];google.li=0;google.getEI=function(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||google.kEI};google.getLEI=function(a){for(var b=null;a&&(!a.getAttribut
+1:08:03 PM web.1 |  >  e||!(b=a.getAttribute("leid")));)a=a.parentNode;return b};google.https=function(){return"https:"==window.location.protocol};google.ml=function(){return null};google.wl=function(a,b){try{google.ml(Error(a),!1,b)}catch(c){}};google.time=function(){return(new Date).getTime()};google.log=function(a,b,c,d,g){a=google.logUrl(a,b,c,d,g);if(""!=a){b=new Image;var e=google.lc,f=google.li;e[f]=b;b.onerror=b.onload=b.onabort=function(){delete e[f]};window.google&&window.google.vel&&window.google.vel.lu&&wi
+1:08:03 PM web.1 |  >  ndow.google.vel.lu(a);b.src=a;google.li=f+1}};google.logUrl=function(a,b,c,d,g){var e="",f=google.ls||"";c||-1!=b.search("&ei=")||(e="&ei="+google.getEI(d),-1==b.search("&lei=")&&(d=google.getLEI(d))&&(e+="&lei="+d));a=c||"/"+(g||"gen_204")+"?atyp=i&ct="+a+"&cad="+b+e+f+"&zx="+google.time();/^http:/i.test(a)&&google.https()&&(google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a};google.y={};google.x=function(a,b){google.y[a.id]=[a,b];return!1};google.lq=[];google.load=function(a,b,c){google.lq
+1:08:03 PM web.1 |  >  .push([[a],b,c])};google.loadAll=function(a,b){google.lq.push([a,b])};}).call(this);google.f={};var a=window.location,b=a.href.indexOf("#");if(0<=b){var c=a.href.substring(b+1);/(^|&)q=/.test(c)&&-1==c.indexOf("#")&&a.replace("/search?"+c.replace(/(^|&)fp=[^&]*/g,"")+"&cad=h")};</script><style>#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:a
+1:08:03 PM web.1 |  >  bsolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+1:08:03 PM web.1 |  </style><style>body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#36c}.q{color:#00c}.ts td{padding:0}.ts{border-collapse:collapse}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}
+1:08:03 PM web.1 |  >  a.gb1,a.gb2,a.gb3,a.gb4{color:#11c !important}body{background:#fff;color:black}a{color:#11c;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#36c}a:visited{color:#551a8b}a.gb1,a.gb4{text-decoration:underline}a.gb3:hover{text-decoration:none}#ghead a.gb2:hover{color:#fff !important}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;height:30px}.lsbb{display:bloc
+1:08:03 PM web.1 |  >  k}.ftl,#fll a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#ccc}.lst:focus{outline:none}</style><script></script><link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon"></head><body bgcolor="#fff"><script>(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload
+1:08:03 PM web.1 |  >   = function(){window.n && window.n();if (document.images){new Image().src=src;}
+1:08:03 PM web.1 |  if (!iesg){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}
+1:08:03 PM web.1 |  }
+1:08:03 PM web.1 |  })();</script><div id="mngb"> <div id=gbar><nobr><b class=gb1>Search</b> <a class=gb1 href="http://www.google.co.in/imghp?hl=en&tab=wi">Images</a> <a class=gb1 href="http://maps.google.co.in/maps?hl=en&tab=wl">Maps</a> <a class=gb1 href="https://play.google.com/?hl=en&tab=w8">Play</a> <a class=gb1 href="http://www.youtube.com/?gl=IN&tab=w1">YouTube</a> <a class=gb1 href="http://news.google.co.in/nwshp?hl=en&tab=wn">News</a> <a class=gb1 href="https://mail.google.com/mail/?tab=wm">Gmail</a> <a cl
+1:08:03 PM web.1 |  >  ass=gb1 href="https://drive.google.com/?tab=wo">Drive</a> <a class=gb1 style="text-decoration:none" href="https://www.google.co.in/intl/en/options/"><u>More</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a href="http://www.google.co.in/history/optout?hl=en" class=gb4>Web History</a> | <a  href="/preferences?hl=en" class=gb4>Settings</a> | <a target=_top id=gb_70 href="https://accounts.google.com/ServiceL
+1:08:03 PM web.1 |  >  ogin?hl=en&passive=true&continue=http://www.google.co.in/%3Fgfe_rd%3Dcr%26ei%3DXJUiWY3wOOjs8AeB6I74Bg" class=gb4>Sign in</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div> </div><center><br clear="all" id="lgpd"><div id="lga"><div style="padding:28px 0 3px"><div style="height:110px;width:276px;background:url(/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png) no-repeat" title="Google" align="left" id="hplogo" onload="window.lol&&lol()
+1:08:03 PM web.1 |  >  "><div style="color:#777;font-size:16px;font-weight:bold;position:relative;top:70px;left:218px" nowrap="">India</div></div></div><br></div><form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center" nowrap=""><input name="ie" value="ISO-8859-1" type="hidden"><input value="en-IN" name="hl" type="hidden"><input name="source" type="hidden" value="hp"><input name="biw" type="hidden"><input name="bih" type="hidden"><div class="
+1:08:03 PM web.1 |  >  ds" style="height:32px;margin:4px 0"><input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57"></div><br style="line-height:0"><span class="ds"><span class="lsbb"><input class="lsb" value="Google Search" name="btnG" type="submit"></span></span><span class="ds"><span class="lsbb"><input class="lsb" value="I'm Feeling Lucky" name="btnI" onclick="if(this.form.q.value)this.checked=1; e
+1:08:03 PM web.1 |  >  lse top.location='/doodles/'" type="submit"></span></span></td><td class="fl sblc" align="left" nowrap="" width="25%"><a href="/advanced_search?hl=en-IN&amp;authuser=0">Advanced search</a><a href="/language_tools?hl=en-IN&amp;authuser=0">Language tools</a></td></tr></table><input id="gbv" name="gbv" type="hidden" value="1"></form><div id="gac_scont"></div><div style="font-size:83%;min-height:3.5em"><br><div id="als"><style>#als{font-size:small;margin-bottom:24px}#_eEe{display:inline-block;line-h
+1:08:03 PM web.1 |  >  eight:28px;}#_eEe a{padding:0 3px;}._lEe{display:inline-block;margin:0 2px;white-space:nowrap}._PEe{display:inline-block;margin:0 2px}</style><div id="_eEe">Google.co.in offered in: <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dhi%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAU&amp;usg=AFQjCNGsjyo6llZnhEWx4xsRFGx2D9Sdeg">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</a>  <a href="/url?q=http://www.google.co.in/setpre
+1:08:03 PM web.1 |  >  fs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dbn%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAY&amp;usg=AFQjCNGWu7X8e5hyfjzL--fUrl-MlxDLyQ">&#2476;&#2494;&#2434;&#2482;&#2494;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dte%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAc&amp;usg=AFQjCNHwPo9_nQKBtLnJS49qNFwDfKpRkA">&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;</a>  <a href="
+1:08:03 PM web.1 |  >  /url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dmr%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAg&amp;usg=AFQjCNHTCX859QlMcfFD1oKth9BSsTuNXQ">&#2350;&#2352;&#2366;&#2336;&#2368;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dta%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAk&amp;usg=AFQjCNH2lxOzAUNW82bNe1IxV6T5l3p5ww">&#2980;&#2990;&#3007
+1:08:03 PM web.1 |  >  ;&#2996;&#3021;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dgu%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAo&amp;usg=AFQjCNF4_Mj-0rEpjvNav5qkQuSbJnDgYg">&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dkn%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAs&amp;usg=AFQjCNF60y_u
+1:08:03 PM web.1 |  >  bjQGmcjZEAnAd1vvRyVh0A">&#3221;&#3240;&#3277;&#3240;&#3233;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dml%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8KHXdvBZIQ2ZgBCAw&amp;usg=AFQjCNGoSaX57I36MTnyYC51KjjiL6SFIw">&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</a>  <a href="/url?q=http://www.google.co.in/setprefs%3Fsig%3D0_nWetAeYanI7EhOwgdPIzAQ96io4%253D%26hl%3Dpa%26source%3Dhomepage&amp;sa=U&amp;ved=0ahUKEwiEwvGc_4LUAhULtI8
+1:08:03 PM web.1 |  >  KHXdvBZIQ2ZgBCA0&amp;usg=AFQjCNG-86hTuY45J87J6ziYkWB-LS1aLg">&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;</a> </div></div></div><span id="footer"><div style="font-size:10pt"><div style="margin:19px auto;text-align:center" id="fll"><a href="/intl/en/ads/">Advertising?Programs</a><a href="http://www.google.co.in/services/">Business Solutions</a><a href="https://plus.google.com/104205742743787718296" rel="publisher">+Google</a><a href="/intl/en/about.html">About Google</a><a href="http://www.google.c
+1:08:03 PM web.1 |  >  o.in/setprefdomain?prefdom=US&amp;sig=__1bGTMqqiKs_N5KVKbbcolcTXZkE%3D" id="fehl">Google.com</a></div></div><p style="color:#767676;font-size:8pt">&copy; 2017 - <a href="/intl/en/policies/privacy/">Privacy</a> - <a href="/intl/en/policies/terms/">Terms</a></p></span></center><script>(function(){window.google.cdo={height:0,width:0};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b)var c=window.document,d="CSS1Compat"==c.compatMode?c.documentElement:c.body,a=d.clientWidth,b=d.clie
+1:08:03 PM web.1 |  >  ntHeight;a&&b&&(a!=google.cdo.width||b!=google.cdo.height)&&google.log("","","/client_204?&atyp=i&biw="+a+"&bih="+b+"&ei="+google.kEI);}).call(this);})();</script><div id="xjsd"></div><div id="xjsi"><script>(function(){function c(b){window.setTimeout(function(){var a=document.createElement("script");a.src=b;document.getElementById("xjsd").appendChild(a)},0)}google.dljp=function(b,a){google.xjsu=b;c(a)};google.dlj=c;}).call(this);(function(){window.google.xjsrm=[];})();if(google.y)google.y.first=
+1:08:03 PM web.1 |  >  [];if(!google.xjs){window._=window._||{};window._DumpException=window._._DumpException=function(e){throw e};if(google.timers&&google.timers.load.t){google.timers.load.t.xjsls=new Date().getTime();}google.dljp('/xjs/_/js/k\x3dxjs.hp.en_US.GZ12N6aSRmo.O/m\x3dsb_he,d/am\x3dAAY/rt\x3dj/d\x3d1/t\x3dzcms/rs\x3dACT90oGgr28XbjoIEsYiSWrLmUTL4sx8Pw','/xjs/_/js/k\x3dxjs.hp.en_US.GZ12N6aSRmo.O/m\x3dsb_he,d/am\x3dAAY/rt\x3dj/d\x3d1/t\x3dzcms/rs\x3dACT90oGgr28XbjoIEsYiSWrLmUTL4sx8Pw');google.xjs=1;}google.pmc
+1:08:03 PM web.1 |  >  ={"sb_he":{"agen":false,"cgen":false,"client":"heirloom-hp","dh":true,"dhqt":true,"ds":"","fl":true,"host":"google.co.in","isbh":28,"jam":0,"jsonp":true,"msgs":{"cibl":"Clear Search","dym":"Did you mean:","lcky":"I\u0026#39;m Feeling Lucky","lml":"Learn more","oskt":"Input tools","psrc":"This search was removed from your \u003Ca href=\"/history\"\u003EWeb History\u003C/a\u003E","psrl":"Remove","sbit":"Search by image","srch":"Google Search"},"nds":true,"ovr":{},"pq":"","refpd":true,"rfs":[],"sbp
+1:08:03 PM web.1 |  >  l":24,"sbpr":24,"scd":10,"sce":5,"stok":"5BRFFo6v5lPYMytKfCy1kJNfKTA"},"d":{},"aWiv7g":{},"YFCs/g":{}};google.y.first.push(function(){if(google.med){google.med('init');google.initHistory();google.med('history');}});if(google.j&&google.j.en&&google.j.xi){window.setTimeout(google.j.xi,0);}
+1:08:03 PM web.1 |  </script></div></body></html>
+1:08:03 PM web.1 |  [22/May/2017 13:08:03] "GET / HTTP/1.1" 200 13259
+1:08:03 PM web.1 |  Not Found: /client_204
+1:08:03 PM web.1 |  [22/May/2017 13:08:03] "GET /client_204?&atyp=i&biw=1366&bih=638&ei=XZUiWcSfCIvovgT33pWQCQ HTTP/1.1" 404 2264
+1:08:03 PM web.1 |  Not Found: /images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png
+1:08:03 PM web.1 |  [22/May/2017 13:08:03] "GET /images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png HTTP/1.1" 404 2395
+1:08:03 PM web.1 |  Not Found: /images/nav_logo229.png
+1:08:03 PM web.1 |  [22/May/2017 13:08:03] "GET /images/nav_logo229.png HTTP/1.1" 404 2233
+1:08:04 PM web.1 |  Not Found: /images/nav_logo229.png
+1:08:04 PM web.1 |  [22/May/2017 13:08:04] "GET /images/nav_logo229.png HTTP/1.1" 404 2233
+1:08:04 PM web.1 |  Not Found: /xjs/_/js/k=xjs.hp.en_US.GZ12N6aSRmo.O/m=sb_he,d/am=AAY/rt=j/d=1/t=zcms/rs=ACT90oGgr28XbjoIEsYiSWrLmUTL4sx8Pw
+1:08:04 PM web.1 |  [22/May/2017 13:08:04] "GET /xjs/_/js/k=xjs.hp.en_US.GZ12N6aSRmo.O/m=sb_he,d/am=AAY/rt=j/d=1/t=zcms/rs=ACT90oGgr28XbjoIEsYiSWrLmUTL4sx8Pw HTTP/1.1" 404 2505
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git add .
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git commit -m "Demo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git config --global use.email "madhuraggarwal13@gmail.com"
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git config --global use.name "MADHUR AGARWAL"
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git commit -m "Demo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git commit -m "Demo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git push heroku master
+Everything up-to-date
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git config --global user.name "MADHUR AGARWAL"
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git config --global user.email "madhuraggarwal13@gmail.com"
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git commit -m "Demo"
+[master 2d0b54b] Demo
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ git push heroku master
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 604 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing requirements with pip
+remote:        Collecting Django==1.11.1 (from -r /tmp/build_a41c27f7abfa4a2ecda338a26e39c8b5/requirements.txt (line 2))
+remote:          Downloading Django-1.11.1-py2.py3-none-any.whl (6.9MB)
+remote:        Collecting requests==2.9.1 (from -r /tmp/build_a41c27f7abfa4a2ecda338a26e39c8b5/requirements.txt (line 6))
+remote:          Downloading requests-2.9.1-py2.py3-none-any.whl (501kB)
+remote:        Collecting pytz (from Django==1.11.1->-r /tmp/build_a41c27f7abfa4a2ecda338a26e39c8b5/requirements.txt (line 2))
+remote:          Downloading pytz-2017.2-py2.py3-none-any.whl (484kB)
+remote:        Installing collected packages: pytz, Django, requests
+remote:          Found existing installation: Django 1.9.7
+remote:            Uninstalling Django-1.9.7:
+remote:              Successfully uninstalled Django-1.9.7
+remote:        Successfully installed Django-1.11.1 pytz-2017.2 requests-2.9.1
+remote:
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        63 static files copied to '/tmp/build_a41c27f7abfa4a2ecda338a26e39c8b5/gettingstarted/staticfiles', 79 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 64.2M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://stark-reef-61252.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy.... done.
+To https://git.heroku.com/stark-reef-61252.git
+   bd90123..2d0b54b  master -> master
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku open
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku addons:create papertrail
+Creating papertrail on stark-reef-61252... !
+ !    Please verify your account to install this add-on plan (please enter a
+ !    credit card) For more information, see
+ !    https://devcenter.heroku.com/categories/billing Verify now at
+ !    https://heroku.com/verify
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku run python manage.py shell
+Running python manage.py shell on stark-reef-61252... starting, run.7014 (Free)
+Running python manage.py shell on stark-reef-61252... connecting, run.7014 (Free)
+Running python manage.py shell on stark-reef-61252... up, run.7014 (Free)
+Python 3.6.0 (default, Dec 24 2016, 04:15:54)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> import requests
+import requests
+>>> print(requests.get('http://www.fb.com').text)
+print(requests.get('http://www.fb.com').text)'))
+  File "<console>", line 1
+    print(requests.get('http://www.fb.com').text)'))
+                                                   ^
+SyntaxError: EOL while scanning string literal
+>>> print(requests.get('http://www.fb.com').text)
+ print(requests.get('http://www.fb.com').text)'))
+  File "<console>", line 1
+    print(requests.get('http://www.fb.com').text)'))
+    ^
+IndentationError: unexpected indent
+>>> print(requests.get('http://fb.com').text)
+ priprint(requests.get('http://fb.com').text)'))
+  File "<console>", line 1
+    print(requests.get('http://fb.com').text)'))
+                                               ^
+SyntaxError: EOL while scanning string literal
+>>> exit()'
+exit()'
+  File "<console>", line 1
+    exit()'
+          ^
+SyntaxError: EOL while scanning string literal
+>>> exit()
+exitexit()
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ ^C
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku addons
+
+Add-on                                           Plan       Price  State
+-----------------------------------------------  ---------  -----  -------
+heroku-postgresql (postgresql-concentric-58450)  hobby-dev  free   created
+ +- as DATABASE
+
+The table above shows add-ons and the attachments to the current app (stark-reef-61252) or other apps.
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku config
+=== stark-reef-61252 Config Vars
+DATABASE_URL: postgres://jkjpdiniusjbnt:7d63a42050623ce0e1a19c93d0eb3f34106cb0785e982f9c1ea762d160be4e52@ec2-23-21-224-199.compute-1.amazonaws.com:5432/d4m9hrlcarare3
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku pg
+=== DATABASE_URL
+Plan:        Hobby-dev
+Status:      Available
+Connections: 0/20
+PG Version:  9.6.1
+Created:     2017-05-22 07:13 UTC
+Data Size:   7.2 MB
+Tables:      0
+Rows:        0/10000 (In compliance)
+Fork/Follow: Unsupported
+Rollback:    Unsupported
+Add-on:      postgresql-concentric-58450
+
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$ heroku run python manage.py migrate
+Running python manage.py migrate on stark-reef-61252... starting, run.7442 (Free)
+Running python manage.py migrate on stark-reef-61252... connecting, run.7442 (Free)
+Running python manage.py migrate on stark-reef-61252... up, run.7442 (Free)
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, hello, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying hello.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+MADHUR@MADHUR-PC MINGW64 ~/python-getting-started (master)
+$

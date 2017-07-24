@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://demo.coupomated.com/network-preferences -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="./Auto Generate_files/css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="./Auto Generate_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Auto Generate_files/deeplink.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./Auto Generate_files/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./Auto Generate_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./Auto Generate_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <script async="" src="./Auto Generate_files/chatra.js.download"></script><script src="./Auto Generate_files/jquery.min.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./Auto Generate_files/bootstrap.min.js.download"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./Auto Generate_files/metisMenu.min.js.download"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./Auto Generate_files/sb-admin-2.js.download"></script>
+
+	<script src="./Auto Generate_files/jquery.dataTables.min.js.download"></script>
+	 <script src="./Auto Generate_files/dataTables.bootstrap.min.js.download"></script>
+	 <link href="./Auto Generate_files/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="./Auto Generate_files/chosen.min.css" rel="stylesheet">
+	<script src="./Auto Generate_files/chosen.jquery.js.download"></script>
+	 <script src="./Auto Generate_files/jquery.sortable.js.download"></script>
+	 <link rel="shortcut icon" href="http://demo.coupomated.com/assets/template/images/coupiliate-fev.png">
+    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
+    <script>
+    // tooltip demo
+    $('.tooltip-demo').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+			$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});
+    </script>
+
+<title>Auto Generate</title>
+<style>#chatra{visibility:hidden;opacity:0;position:fixed;max-height:95%;max-width:90%;max-width:calc(100% - 40px);transition:0.2s linear;transition-property:visibility, opacity;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:auto;height:auto;min-height:0;min-width:0;display:block;box-sizing:content-box;padding:0;margin:0} #chatra.chatra--animating{transition:350ms cubic-bezier(.04,.74,.4,.98);transition-property:height, width, max-width, max-height, top, bottom, left, right, margin-bottom, visibility, opacity, transform, -webkit-transform, -moz-transform;}#chatra.chatra--animating.chatra--mobile-widget{transition:none;} #chatra.chatra--animating.chatra--style-round{transition:none;} #chatra.chatra--side-bottom{bottom:0;} #chatra.chatra--side-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--side-left{left:0;} #chatra.chatra--side-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--side-right{right:0;} #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--side-left.chatra--expanded{bottom:0;left:20px;} #chatra.chatra--side-right.chatra--expanded{bottom:0;right:20px;} #chatra.chatra--pos-right{right:20px;} #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--pos-left{left:20px;} #chatra.chatra--pos-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--pos-center{left:50%;} #chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded){bottom:100%;margin-bottom:-40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded){top:15px;} #chatra.chatra--pos-bottom:not(.chatra--expanded){bottom:40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--pos-middle:not(.chatra--expanded){bottom:50%;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--visible{visibility:visible;opacity:1;} #chatra.chatra--mobile-widget.chatra--pos-right{right:15px;} #chatra.chatra--mobile-widget.chatra--pos-left{left:15px;} #chatra.chatra--mobile-widget.chatra--expanded{max-width:none;max-height:none;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left{left:0;} body.chatra-mobile-widget-expanded{overflow:hidden !important;height:100% !important;width:100% !important;position:fixed !important;margin:0 !important;}#chatra__iframe{left:0;top:0;width:100%;max-width:100%;height:100%;max-height:100%;margin:0;display:block;background:transparent;} #chatra.chatra--correct-odd-width{padding-left:1px;}#chatra.chatra--correct-odd-width #chatra__iframe{left:1px;width:calc(100% - 1px);}#chatra.chatra--correct-odd-height{padding-top:1px;}#chatra.chatra--correct-odd-height #chatra__iframe{top:1px;height:calc(100% - 1px);}@media print {#chatra{display:none;}}</style></head>
+<body style="    background: ghostwhite;">
+<a href="http://demo.coupomated.com/network-preferences#" id="back-to-top" title="Back to top" class="show"><i class="fa fa-arrow-circle-up"></i></a>
+
+<div id="Fragmentation" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fragmentation Message</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Confiramation Message-->
+<div id="Confirm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger btn-ok">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = '3mAERkC97H7xSh2Zg';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+
+<script>
+		$(function() {
+			$('.exclude').sortable({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
+<div id="wrapper">
+
+        <!-- Navigation -->
+
+		 <script>
+$(document).ready(function(){
+		$(".dropdown_hov").hover(function(){
+			$('.dropdown-user').show();
+		});
+		
+		$(".dropdown-user").mouseleave(function(){
+			$(this).hide();
+		});
+		
+		$("body").click(function(){
+				$('.dropdown-user').hide();
+		});
+});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                				<a class="navbar-brand" href="http://demo.coupomated.com/Dashboard"><img src="./Auto Generate_files/aceea-coupomated-1-.png" alt="logo" style="margin-top: -4px;width: 140px;"> </a>
+				            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				<li><a href="http://demo.coupomated.com/my-subscription">Subscribe Here</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.coupomated.com/network-preferences#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+					
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Global Notification
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Personal Notification
+								
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="http://demo.coupomated.com/notification">
+                                <strong>See All Notification</strong>
+                                <i class="fa fa-angle-right"></i>
+							</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                    <a class="dropdown-toggle dropdown_hov" data-toggle="dropdown" href="http://demo.coupomated.com/network-preferences#">
+						<span style="float:right;"><i class="fa fa-user fa-fw"></i>Welcome  ! </span><br>
+						
+						<span>(Plan: Starter -
+						<span style="color: #3c763d;font-weight: 600;">Active</span> ) <i class="fa fa-caret-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="http://demo.coupomated.com/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+						</li>
+					</ul>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu" style="
+					margin-top: 18px;">
+                       		
+						<li><a href="http://demo.coupomated.com/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+						<li class="active">
+							                            <a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-sitemap fa-fw"></i> Relationship<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level  collapse in">
+								
+								<li><a href="http://demo.coupomated.com/manage-network">Manage Networks </a></li>
+								 
+								<li><a href="http://demo.coupomated.com/network-preferences" class="active">Network Preferences</a></li>
+								
+								<li><a href="http://demo.coupomated.com/merchant-network-matrix">Merchant – Network Matrix</a></li>
+								
+                            </ul>
+                        </li>
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-rss fa-fw"></i> Feed Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/api-keys">API Keys  </a></li>
+								<li><a href="http://demo.coupomated.com/manage-merchant">Manage Merchants </a></li>
+									<li><a href="http://demo.coupomated.com/manage-category">Manage Categories</a> </li>
+									<li><a href="http://demo.coupomated.com/manage-offer-types">Manage Offer Types</a></li>
+									<li><a href="http://demo.coupomated.com/manage-datafeed-fields">Manage Datafeed Fields</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-list-alt fa-fw"></i> Manage Content Uniqueness<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/word-replacement">Word Replacement  </a></li>
+																		<li><a href="http://demo.coupomated.com/word-spinner">Word Spinner  </a></li>
+																		
+																		<li><a href="http://demo.coupomated.com/reconstruct-coupon-text">Reconstruct Coupon Text </a> </li>
+																</ul>
+						</li>
+						
+						
+												 
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-wordpress fa-fw"></i> WordPress Configuration<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level  collapse">
+								<li><a href="http://demo.coupomated.com/plugin-download">Plugin Download   </a></li>
+								<li><a href="http://demo.coupomated.com/merchants-master">Merchants Master   </a></li>
+								<li><a href="http://demo.coupomated.com/categories-master">Categories Master   </a> </li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-money fa-fw"></i> Coupilliate Reports<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/order-detail-report">Order Detail Report    </a></li>
+								<li><a href="http://demo.coupomated.com/earning-report"> Earning Report </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-tasks fa-fw"></i> Links &amp; Tools<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">                               
+								<li><a href="http://demo.coupomated.com/browse-coupons">Browse Coupons   </a></li>
+									<li><a href="http://demo.coupomated.com/merchants-hub">Merchants Hub </a></li>
+									<li><a href="http://demo.coupomated.com/network-hub">Network Hub </a></li>
+									<li><a href="http://demo.coupomated.com/wordpress-demo">WordPress Demo</a></li> 
+									<li><a href="http://demo.coupomated.com/link-builder">Link Builder </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-puzzle-piece fa-fw"></i> Add-on Services<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+							
+																		<li><a href="http://demo.coupomated.com/offer-banners">Offer Banners    </a></li>
+																	<li><a href="http://demo.coupomated.com/redirect-script">Redirect Script    </a></li>
+																</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-life-ring fa-fw"></i> Support<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/user-faq">FAQ</a></li>
+								<li><a href="http://demo.coupomated.com/contactus">Contact Us</a></li>
+								<li><a href="http://demo.coupomated.com/notification"> Notifications</a></li>
+							</ul>
+						</li>
+
+						<li>                            
+							<a href="http://demo.coupomated.com/network-preferences#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>                            
+							<ul class="nav nav-second-level collapse">                               								
+								<li><a href="http://demo.coupomated.com/account-information">Account Information  </a></li>
+								<li><a href="http://demo.coupomated.com/my-subscription">My Subscription </a></li>
+								
+								<li><a href="http://demo.coupomated.com/logout">Logout</a></li>                          
+							                        
+							</ul>                          
+						</li>	
+						
+						
+		
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+         <!-- Page Content -->
+
+        <div id="page-wrapper" style="min-height: 562px;">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                     <style>
+.faqp{
+float: right;
+padding: 3px;
+border: 1px solid #337ab7;
+border-radius: 5px;
+text-decoration: underline;
+}
+</style>
+<div class="col-lg-12">
+	<h1 class="page-header">Network Preference</h1> 
+		<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	Set here unique preference for each network. This will automatically select network for each merchants based on your set preference.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	For ex. Paytm has accounts with Optimise, Payoom and Vcommission. You set preference as 1 - Optimise, 2 - Vcommission and 3 - Payoom, than, this will automatically route all Paytm links via Optimise as you preferred it over other network.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	By selecting preferences, the pain to select networks at each merchant level is eliminated. Later, you can manually edit preferences at&nbsp;<a href="http://demo.coupomated.com/merchant-network-matrix" style="box-sizing: border-box; color: rgb(51, 122, 183); text-decoration: none; background-color: transparent;">Merchant – Network Matrix.</a></p>
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); line-height: 20px; font-family: Roboto,sans-serif; font-size: 14px; box-sizing: border-box;">
+	<i>&nbsp;Networks configured under&nbsp;</i><a href="http://demo.coupomated.com/manage-network" style="box-sizing: border-box; color: rgb(51, 122, 183); text-decoration: none; background-color: transparent;"><i>manage networks</i></a><i>&nbsp;would only be available here for you to set preference</i></p>
+<p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); line-height: 20px; font-family: Roboto,sans-serif; font-size: 14px; box-sizing: border-box;">
+	<strong><span style="color:#b22222;">IMPORTANT NOTE - After making changes, make sure to click Generate Matrix Button and Verify the Generated Data.<br>
+	To re-build links as per newly saved setting, visit&nbsp; </span><a href="https://www.coupomated.com/browse-coupons" style="box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(35, 82, 124); text-decoration: underline; outline: 0px; font-family: Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="color:#b22222;">Browse Coupons</span></a><span style="color:#b22222;">&nbsp;and Re-Generate Links</span></strong></p>
+<br>
+	
+	</div> 
+					
+					<div class="col-lg-12">
+											</div>
+
+                    <!-- /.col-lg-12 -->
+
+                </div><br>
+				
+				
+
+				
+				
+
+				<div class="row">
+
+					<div class="form-group">
+						
+                   <!-- <label for="name">Direct Store Network <span style="color:red">*</span></label>--><br>
+						
+					<div class="store-sel">
+						<label>Direct Merchant Networks</label>
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>Network</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+																	<tr>
+										<td>Amazon Direct</td>
+										<td>
+											<input type="checkbox" disabled="" value="1002" id="network"></td>
+									</tr>
+																	<tr>
+										<td>Flipkart Direct</td>
+										<td>
+											<input type="checkbox" disabled="" value="1003" id="network"></td>
+									</tr>
+																	<tr>
+										<td>Snapdeal Direct</td>
+										<td>
+											<input type="checkbox" disabled="" value="1007" id="network"></td>
+									</tr>
+																	<tr>
+										<td>eBay Direct</td>
+										<td>
+											<input type="checkbox" disabled="" value="1012" id="network"></td>
+									</tr>
+															</tbody>
+						</table>
+
+					</div>		 
+
+				</div>
+
+				 <div class="form-group">
+
+                    <label for="email">General Networks<br>
+
+					<span style="color:grey;font-size:13px">(Lower the Preference, higher the weightage.) </span>
+					
+					</label>
+					
+					<div class="netwroks">
+						<h2>Network Order Preference</h2>
+						<p>Set network preference by drag &amp; drop. Set high to low preference by dragging top to low in order.</p>
+						<ul class="exclude list">
+														<li data-net="3" class="" draggable="true">
+								1. Optimise (OMG)</li>
+														<li data-net="4" class="" draggable="true">
+								2. Komli</li>
+														<li data-net="6" class="" draggable="true">
+								3. vCommission</li>
+														<li data-net="7" class="" draggable="true">
+								4. Payoom</li>
+														<li data-net="8" class="" draggable="true">
+								5. iCubesWire</li>
+														<li data-net="9" class="" draggable="true">
+								6. Cuelinks</li>
+														<li data-net="10" class="" draggable="true">
+								7. DGM</li>
+														<li data-net="11" class="" draggable="true">
+								8. Coupilliate</li>
+														<li data-net="12" class="" draggable="true">
+								9. Tyroo</li>
+														<li data-net="14" class="" draggable="true">
+								10. ClickOnik</li>
+													</ul>
+					</div>
+                </div>
+
+				
+
+				<div class="form-group">
+				
+				
+					<button onclick="submit_gen(1)" name="add" id="add" type="submit" class="btn btn-default gen"> Generate Network – Merchant Matrix</button>
+
+				
+				</div>
+			</div>
+			<style>
+.faqcat{font-size: 30px;}
+</style>                <!-- /.row -->
+
+            </div>
+
+            <!-- /.container-fluid -->
+
+        </div>
+
+		 <!-- /#page-wrapper -->
+
+</div>
+
+
+
+<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+	
+$(document).ready(function(){
+	$('.faqp a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+		
+	    var target = this.hash,
+	    $target = $(target);
+		
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+  </script>
+<style>
+	#footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	color: #fff;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+	text-align: center;
+	border-top: 1px solid #A9A9A9;
+		
+	}
+.footer-menu{
+	clear: none;
+    display: block;
+      padding-top: 22px;
+    margin: 0;
+}
+	.footer-menu li{ display:block;float:left;position: relative;    list-style: none;
+    margin: 0;
+    padding: 0;}
+	.footer-menu li a {
+    padding: 30px 20px 32px;color: #fff;
+	}
+	.text{padding:12px;}
+	
+</style>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="footer-menu">
+						                            <li><a href="http://demo.coupomated.com/about-us">About Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/features">Features </a></li>
+			                            <li><a href="http://demo.coupomated.com/plans">Plans </a></li>
+			                            <li><a href="http://demo.coupomated.com/contact-us">Contact Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/terms-and-privacy-policy">Terms &amp; Privacy Policy </a></li>
+			                            <li><a href="http://demo.coupomated.com/request-a-demo">Request a Demo </a></li>
+			                            <li><a href="http://demo.coupomated.com/services">Services </a></li>
+			                            <li><a href="http://demo.coupomated.com/how-it-works">How It Works </a></li>
+			                            <li><a href="http://demo.coupomated.com/faq">FAQ  </a></li>
+							</ul>
+			</div>
+			<div class="col-md-12 text">
+				<p>© 2016 - Coupomated.com. All Rights Reserved.</p>
+				<p>Made in India with Passion</p>
+			</div>
+			</div>
+		</div>
+</footer><div id="chatra" class="chatra--style-round chatra--side-right chatra--pos-bottom chatra--visible" style="width: 70px; height: 70px; transform: none; z-index: 9999;"><iframe frameborder="0" id="chatra__iframe" allowtransparency="true" src="./Auto Generate_files/saved_resource.html" style="position: absolute;"></iframe></div></body></html>

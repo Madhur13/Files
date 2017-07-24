@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://demo.coupomated.com/api-keys -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="./API Call_files/css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="./API Call_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./API Call_files/deeplink.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./API Call_files/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./API Call_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./API Call_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <script async="" src="./API Call_files/chatra.js.download"></script><script src="./API Call_files/jquery.min.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./API Call_files/bootstrap.min.js.download"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./API Call_files/metisMenu.min.js.download"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./API Call_files/sb-admin-2.js.download"></script>
+
+	<script src="./API Call_files/jquery.dataTables.min.js.download"></script>
+	 <script src="./API Call_files/dataTables.bootstrap.min.js.download"></script>
+	 <link href="./API Call_files/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="./API Call_files/chosen.min.css" rel="stylesheet">
+	<script src="./API Call_files/chosen.jquery.js.download"></script>
+	 <script src="./API Call_files/jquery.sortable.js.download"></script>
+	 <link rel="shortcut icon" href="http://demo.coupomated.com/assets/template/images/coupiliate-fev.png">
+    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
+    <script>
+    // tooltip demo
+    $('.tooltip-demo').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+			$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});
+    </script>
+
+<title>API Call</title>
+<style>#chatra{visibility:hidden;opacity:0;position:fixed;max-height:95%;max-width:90%;max-width:calc(100% - 40px);transition:0.2s linear;transition-property:visibility, opacity;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:auto;height:auto;min-height:0;min-width:0;display:block;box-sizing:content-box;padding:0;margin:0} #chatra.chatra--animating{transition:350ms cubic-bezier(.04,.74,.4,.98);transition-property:height, width, max-width, max-height, top, bottom, left, right, margin-bottom, visibility, opacity, transform, -webkit-transform, -moz-transform;}#chatra.chatra--animating.chatra--mobile-widget{transition:none;} #chatra.chatra--animating.chatra--style-round{transition:none;} #chatra.chatra--side-bottom{bottom:0;} #chatra.chatra--side-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--side-left{left:0;} #chatra.chatra--side-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--side-right{right:0;} #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--side-left.chatra--expanded{bottom:0;left:20px;} #chatra.chatra--side-right.chatra--expanded{bottom:0;right:20px;} #chatra.chatra--pos-right{right:20px;} #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--pos-left{left:20px;} #chatra.chatra--pos-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--pos-center{left:50%;} #chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded){bottom:100%;margin-bottom:-40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded){top:15px;} #chatra.chatra--pos-bottom:not(.chatra--expanded){bottom:40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--pos-middle:not(.chatra--expanded){bottom:50%;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--visible{visibility:visible;opacity:1;} #chatra.chatra--mobile-widget.chatra--pos-right{right:15px;} #chatra.chatra--mobile-widget.chatra--pos-left{left:15px;} #chatra.chatra--mobile-widget.chatra--expanded{max-width:none;max-height:none;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left{left:0;} body.chatra-mobile-widget-expanded{overflow:hidden !important;height:100% !important;width:100% !important;position:fixed !important;margin:0 !important;}#chatra__iframe{left:0;top:0;width:100%;max-width:100%;height:100%;max-height:100%;margin:0;display:block;background:transparent;} #chatra.chatra--correct-odd-width{padding-left:1px;}#chatra.chatra--correct-odd-width #chatra__iframe{left:1px;width:calc(100% - 1px);}#chatra.chatra--correct-odd-height{padding-top:1px;}#chatra.chatra--correct-odd-height #chatra__iframe{top:1px;height:calc(100% - 1px);}@media print {#chatra{display:none;}}</style></head>
+<body style="    background: ghostwhite;">
+<a href="http://demo.coupomated.com/api-keys#" id="back-to-top" title="Back to top" class=""><i class="fa fa-arrow-circle-up"></i></a>
+
+<div id="Fragmentation" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fragmentation Message</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Confiramation Message-->
+<div id="Confirm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger btn-ok">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = '3mAERkC97H7xSh2Zg';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+<div id="wrapper">
+		 <script>
+$(document).ready(function(){
+		$(".dropdown_hov").hover(function(){
+			$('.dropdown-user').show();
+		});
+		
+		$(".dropdown-user").mouseleave(function(){
+			$(this).hide();
+		});
+		
+		$("body").click(function(){
+				$('.dropdown-user').hide();
+		});
+});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                				<a class="navbar-brand" href="http://demo.coupomated.com/Dashboard"><img src="./API Call_files/aceea-coupomated-1-.png" alt="logo" style="margin-top: -4px;width: 140px;"> </a>
+				            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				<li><a href="http://demo.coupomated.com/my-subscription">Subscribe Here</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.coupomated.com/api-keys#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+					
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Global Notification
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Personal Notification
+								
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="http://demo.coupomated.com/notification">
+                                <strong>See All Notification</strong>
+                                <i class="fa fa-angle-right"></i>
+							</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                    <a class="dropdown-toggle dropdown_hov" data-toggle="dropdown" href="http://demo.coupomated.com/api-keys#">
+						<span style="float:right;"><i class="fa fa-user fa-fw"></i>Welcome  ! </span><br>
+						
+						<span>(Plan: Starter -
+						<span style="color: #3c763d;font-weight: 600;">Active</span> ) <i class="fa fa-caret-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="http://demo.coupomated.com/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+						</li>
+					</ul>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu" style="
+					margin-top: 18px;">
+                       		
+						<li><a href="http://demo.coupomated.com/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+						<li>
+							                            <a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-sitemap fa-fw"></i> Relationship<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level  collapse">
+								
+								<li><a href="http://demo.coupomated.com/manage-network">Manage Networks </a></li>
+								 
+								<li><a href="http://demo.coupomated.com/network-preferences">Network Preferences</a></li>
+								
+								<li><a href="http://demo.coupomated.com/merchant-network-matrix">Merchant – Network Matrix</a></li>
+								
+                            </ul>
+                        </li>
+						<li class="active">
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-rss fa-fw"></i> Feed Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse in">
+								<li><a href="http://demo.coupomated.com/api-keys" class="active">API Keys  </a></li>
+								<li><a href="http://demo.coupomated.com/manage-merchant">Manage Merchants </a></li>
+									<li><a href="http://demo.coupomated.com/manage-category">Manage Categories</a> </li>
+									<li><a href="http://demo.coupomated.com/manage-offer-types">Manage Offer Types</a></li>
+									<li><a href="http://demo.coupomated.com/manage-datafeed-fields">Manage Datafeed Fields</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-list-alt fa-fw"></i> Manage Content Uniqueness<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/word-replacement">Word Replacement  </a></li>
+																		<li><a href="http://demo.coupomated.com/word-spinner">Word Spinner  </a></li>
+																		
+																		<li><a href="http://demo.coupomated.com/reconstruct-coupon-text">Reconstruct Coupon Text </a> </li>
+																</ul>
+						</li>
+						
+						
+												 
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-wordpress fa-fw"></i> WordPress Configuration<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level  collapse">
+								<li><a href="http://demo.coupomated.com/plugin-download">Plugin Download   </a></li>
+								<li><a href="http://demo.coupomated.com/merchants-master">Merchants Master   </a></li>
+								<li><a href="http://demo.coupomated.com/categories-master">Categories Master   </a> </li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-money fa-fw"></i> Coupilliate Reports<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/order-detail-report">Order Detail Report    </a></li>
+								<li><a href="http://demo.coupomated.com/earning-report"> Earning Report </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-tasks fa-fw"></i> Links &amp; Tools<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">                               
+								<li><a href="http://demo.coupomated.com/browse-coupons">Browse Coupons   </a></li>
+									<li><a href="http://demo.coupomated.com/merchants-hub">Merchants Hub </a></li>
+									<li><a href="http://demo.coupomated.com/network-hub">Network Hub </a></li>
+									<li><a href="http://demo.coupomated.com/wordpress-demo">WordPress Demo</a></li> 
+									<li><a href="http://demo.coupomated.com/link-builder">Link Builder </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-puzzle-piece fa-fw"></i> Add-on Services<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+							
+																		<li><a href="http://demo.coupomated.com/offer-banners">Offer Banners    </a></li>
+																	<li><a href="http://demo.coupomated.com/redirect-script">Redirect Script    </a></li>
+																</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-life-ring fa-fw"></i> Support<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/user-faq">FAQ</a></li>
+								<li><a href="http://demo.coupomated.com/contactus">Contact Us</a></li>
+								<li><a href="http://demo.coupomated.com/notification"> Notifications</a></li>
+							</ul>
+						</li>
+
+						<li>                            
+							<a href="http://demo.coupomated.com/api-keys#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>                            
+							<ul class="nav nav-second-level collapse">                               								
+								<li><a href="http://demo.coupomated.com/account-information">Account Information  </a></li>
+								<li><a href="http://demo.coupomated.com/my-subscription">My Subscription </a></li>
+								
+								<li><a href="http://demo.coupomated.com/logout">Logout</a></li>                          
+							                        
+							</ul>                          
+						</li>	
+						
+						
+		
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>        <div id="page-wrapper" style="min-height: 562px;">
+            <div class="container-fluid">
+				<div class="row">
+				 <style>
+.faqp{
+float: right;
+padding: 3px;
+border: 1px solid #337ab7;
+border-radius: 5px;
+text-decoration: underline;
+}
+</style>
+<div class="col-lg-12">
+	<h1 class="page-header">API Keys</h1> 
+			<p class="faqp"><a href="http://demo.coupomated.com/api-keys#faq">See Faq</a></p><br><br>
+		<p>
+	<span style="color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">Refer here the API keys &amp; links to configure on your couponing website. This will enable downloading coupon data from Coupomated. </span></p>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">Based on your choice of data format, you can select any API link and configure on your website accordingly.</span></p>
+<br>
+	
+			<div class="alert alert-info fade in">
+			<!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>-->
+		<p></p><p>
+	Read Documentation for API at the bottom of the page.</p>
+<p></p>
+		</div>
+	</div> <br>
+				    <!-- /.col-lg-12 -->
+                </div>
+				
+                
+												<div class="row">
+                    <div class="col-lg-12">
+                       <label>Your Script Name : </label> demoBasicFeed.php<br>
+                       <label>Your Api Access Key : </label> de70-df65-72b8-d68f<br>
+					   <label>Last File Update : </label> 13-05-2017 07:00:47<br>
+                    </div>
+					<br>
+                </div>
+				
+								<div class="row">
+					<div class="col-lg-12">
+					<h3>DataFeed Details</h3>	
+					<table class="table table-striped table-bordered">
+						
+							<tbody><tr><th>Link For CSV Format</th></tr>
+							<tr><td><a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=csv">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=csv</a></td></tr>
+							<tr><th>Link For XML Format</th></tr>
+							<tr><td><a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=xml">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=xml</a></td></tr>
+							<tr><th>Link For JSON Format</th></tr>
+							<tr><td><a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=json">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=json</a></td></tr>
+							
+						</tbody></table>
+						
+					</div>
+				</div>
+									<div class="row">
+					<div class="col-lg-12">
+				
+					<h3>API Details </h3>	
+					
+					
+					<table class="table table-bordered table-striped table-responsive">
+					<thead><tr>
+							<th>API Name</th>
+							<th>Method</th>
+							<th>Parameters</th>
+							<th>Sample URL &amp; Response</th>
+							<th>Documentation</th>
+						</tr></thead>	
+						
+						<tbody>
+													<tr>
+							<td>Store List</td>	
+							<td>getStores</td>	
+							<td>subscribed,format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStores/Y/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStores/Y/json</a></td>	
+							<td><button type="button" id="btnDocModal1" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal1">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>Category List</td>	
+							<td>getCategories</td>	
+							<td>format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getCategories/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getCategories/json</a></td>	
+							<td><button type="button" id="btnDocModal2" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal2">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>All Coupon Data</td>	
+							<td>getAllCoupons</td>	
+							<td>format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getAllCoupons/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getAllCoupons/json</a></td>	
+							<td><button type="button" id="btnDocModal3" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal3">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>Store Coupons</td>	
+							<td>getStoreCoupons</td>	
+							<td>store_id,format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStoreCoupons/1013/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStoreCoupons/1013/json</a></td>	
+							<td><button type="button" id="btnDocModal4" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal4">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>Batch Coupons</td>	
+							<td>getBatchCoupons</td>	
+							<td>rowcount,pagenum,format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getBatchCoupons/100/2/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getBatchCoupons/100/2/json</a></td>	
+							<td><button type="button" id="btnDocModal5" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal5">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>Coupon Count</td>	
+							<td>getCouponCount</td>	
+							<td>NULL</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getCouponCount">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getCouponCount</a></td>	
+							<td><button type="button" id="btnDocModal6" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal6">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>Tag Master</td>	
+							<td>getTags</td>	
+							<td>format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getTags/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getTags/json</a></td>	
+							<td><button type="button" id="btnDocModal7" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal7">Open Documentation</button></td>	
+							</tr>
+							
+														<tr>
+							<td>All Coupon StoreWise</td>	
+							<td>getStoreAllCoupons</td>	
+							<td>format</td>	
+							<td><a target="_blank" href="https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStoreAllCoupons/json">https://www.coupomated.com/apiv3/de70-df65-72b8-d68f/getStoreAllCoupons/json</a></td>	
+							<td><button type="button" id="btnDocModal8" class="btn btn-info btn-md" data-toggle="modal" data-target="docModal8">Open Documentation</button></td>	
+							</tr>
+							
+														</tbody>
+					</table>
+										<div class="modal fade" id="docModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getStores</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getStores</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose </strong>- This API returns Store/Merchant related information. Use this API to build the master. It will also provide you with logo.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				Parameter</td>
+			<td>
+				Possible Values</td>
+		</tr>
+		<tr>
+			<td>
+				subscribed</td>
+			<td>
+				<p>
+					Y - Will filters stores and returns only the ones you have subscribed.</p>
+				<p>
+					N&nbsp;- Will return all stores supporrted by Coupomated.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getCategories</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getCategories</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose </strong>- This API returns all the Categories that are provided by Coupomated as part of your coupon data..</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				Parameter</td>
+			<td>
+				Possible Values</td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getAllCoupons</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getAllCoupons</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose </strong>- This API returns all the coupons that is part of your feed. Data is personalized as per your settings.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				<strong>Parameter</strong></td>
+			<td>
+				<strong>Possible Values</strong></td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-left: 40px;">
+	<strong>Caution</strong></p>
+<ol>
+	<li style="margin-left: 40px;">
+		API returns data for all the stores, if you looking for store specific coupons, lookup <u>getStoreCoupons</u>? method.</li>
+	<li style="margin-left: 40px;">
+		Upon seding request, data is queried in real time from our database. So it might few seconds to return data.</li>
+	<li style="margin-left: 40px;">
+		Since this returns all data, response will get heavy , typically few MB's (MegaBytes)</li>
+	<li style="margin-left: 40px;">
+		Use this API if "Datafeed" is not fulfulling your requirement.</li>
+	<li style="margin-left: 40px;">
+		Respone will change as per your plan.</li>
+</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getStoreCoupons</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getStoreCoupons</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose </strong>- This API returns coupons specific store. If you haven't subscribed to it , you will receive empty response.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				Parameter</td>
+			<td>
+				Possible Values</td>
+		</tr>
+		<tr>
+			<td>
+				store</td>
+			<td>
+				<p>
+					Any Valid StoreId - Integer Value</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-left: 40px;">
+	<strong>Caution</strong></p>
+<ol>
+	<li style="margin-left: 40px;">
+		Before using this API, we recommend calling <u>getStores</u>? method first and configure store master.</li>
+	<li style="margin-left: 40px;">
+		If you are subscribed to the store for which you are requesting data for , you will receive empty response.</li>
+	<li style="margin-left: 40px;">
+		Respone will change as per your plan.</li>
+</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getBatchCoupons</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size: 16px;"><strong>getBatchCoupons</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose&nbsp;</strong>- This API returns incremental coupons that is part of your feed. You can control the number of records and the page number for pagination.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters</strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				<strong>Parameter</strong></td>
+			<td>
+				<strong>Possible Values</strong></td>
+		</tr>
+		<tr>
+			<td>
+				rowcount</td>
+			<td>
+				Number of records you want to returned as API result.</td>
+		</tr>
+		<tr>
+			<td>
+				pagenum</td>
+			<td>
+				Page number for which you want the incremental data.</td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-left: 40px;">
+	<strong>Caution</strong></p>
+<ol>
+	<li style="margin-left: 40px;">
+		First determine how many records your system can handel and decide rowcount accordingly.</li>
+	<li style="margin-left: 40px;">
+		API returns data for all the stores, if you looking for store specific coupons, lookup&nbsp;<strong><u>getStoreCoupons</u>&nbsp;</strong>method.</li>
+	<li style="margin-left: 40px;">
+		If you want all the data in one request, you can use our&nbsp;<u><strong>getAllCoupons </strong></u>method.</li>
+	<li style="margin-left: 40px;">
+		Upon seding request, data is queried in real time from our database. So it might few seconds to return data.</li>
+	<li style="margin-left: 40px;">
+		Use this API if "Datafeed" is not fulfulling your requirement.</li>
+	<li style="margin-left: 40px;">
+		Respone will change as per your plan.</li>
+</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getCouponCount</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size: 16px;"><strong>getCouponCount</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose&nbsp;</strong>- This API returns number of coupons available in your account in real time. This can be used with&nbsp;<u><strong>getBatchCoupons</strong></u>&nbsp;effectively.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters -&nbsp;</strong>This method requires no parameters.</p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				Parameter</td>
+			<td>
+				Possible Values</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getTags</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getTags</strong></span></p>
+<p>
+	<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Purpose </strong>- This API returns all theTags that are available along with its Type. This allows you to customize as required to develop advanced filters.</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				Parameter</td>
+			<td>
+				Possible Values</td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					<div class="modal fade" id="docModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h3 class="modal-title" id="myModalLabel">getStoreAllCoupons</h3>
+      </div>
+      <div class="modal-body">
+		<p>
+	<span style="font-size:16px;"><strong>getStoreAllCoupons</strong></span></p>
+<p style="padding-left: 30px;">
+	<strong>Purpose </strong>- This API returns all the coupons that is part of your feed. Data is personalized as per your settings.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data is Grouped Store Wise.&nbsp;</p>
+<p style="padding-left: 30px;">
+	<strong>Parameters </strong></p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				<strong>Parameter</strong></td>
+			<td>
+				<strong>Possible Values</strong></td>
+		</tr>
+		<tr>
+			<td>
+				format</td>
+			<td>
+				<p>
+					JSON - Output format will be JSON</p>
+				<p>
+					XML&nbsp; - Output formeat will be XML</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-left: 40px;">
+	<strong>Caution</strong></p>
+<ol>
+	<li style="margin-left: 40px;">
+		API returns data for all the stores, if you looking for store specific coupons, lookup <u>getStoreCoupons</u>? method.</li>
+	<li style="margin-left: 40px;">
+		Upon seding request, data is queried in real time from our database. So it might few seconds to return data.</li>
+	<li style="margin-left: 40px;">
+		Since this returns all data, response will get heavy , typically few MB's (MegaBytes)</li>
+	<li style="margin-left: 40px;">
+		Use this API if "Datafeed" is not fulfulling your requirement.</li>
+	<li style="margin-left: 40px;">
+		Respone will change as per your plan.</li>
+</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					
+						</div>
+				</div>
+			
+			
+					
+	<div class="row" id="faq">
+		<div class="col-md-12 col-sm-12 ">
+							<p class="faqcat">FAQ - API</p>
+													<div class="panel-group">
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="http://demo.coupomated.com/api-keys#faq_41" style="text-decoration:none;">
+										<i class="fa fa-plus"></i>&nbsp;  How does Coupomated provides data?									</a>
+								</h4>
+							</div>
+							<div id="faq_41" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<p>
+	We provide data in 2 ways. You can evaluate and pick which is best , we will highlight which should be used for typical cases.</p>
+<ol>
+	<li>
+		Coupon DataFeed&nbsp; - Where the data is already prepared as a file and kept ready on server, as delivered as csv/xml/json data.<br>
+		?This is usually recommeded and used for WordPress based website.<br>
+		&nbsp;</li>
+	<li>
+		Coupon API - This is for people using solution other than WordPress, or WordPress developer who want prefer API.</li>
+</ol>
+<p>
+	&nbsp;</p>
+								</div>
+							</div>
+						</div>	
+						
+					</div>
+									<div class="panel-group">
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="http://demo.coupomated.com/api-keys#faq_42" style="text-decoration:none;">
+										<i class="fa fa-plus"></i>&nbsp;  Blank Respone for Datafeed File									</a>
+								</h4>
+							</div>
+							<div id="faq_42" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<p>
+	This will happen for 2 reasons,</p>
+<ol>
+	<li>
+		Your website is not whitelisted, to do so, goto <a href="http://demo.coupomated.com/account-information" target="_blank">Account Information</a>&nbsp;and update "Website" with proper link.<br>
+		?Then, comeback to <a href="http://demo.coupomated.com/api-keys">API Keys</a>&nbsp;and click on "Re-Generate Data File"</li>
+	<li>
+		Another reason is that your data is not generated, to check this goto <a href="http://demo.coupomated.com/browse-coupons">Browse COupons</a>&nbsp;and Click on "Re-Generate Data"</li>
+</ol>
+<p>
+	This should solve the problem, if you still face the issue, drop us email at "contact@coupomated.com"</p>
+								</div>
+							</div>
+						</div>	
+						
+					</div>
+									<div class="panel-group">
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="http://demo.coupomated.com/api-keys#faq_43" style="text-decoration:none;">
+										<i class="fa fa-plus"></i>&nbsp;  You are using it outside your website									</a>
+								</h4>
+							</div>
+							<div id="faq_43" class="panel-collapse collapse ">
+								<div class="panel-body">
+									<p>
+	This error is shown if you are downling the file manully, which is not allowed to prevent redistribution as per our policy.</p>
+<p>
+	So solve this error, simply make the file request from your server, and everything should go smooth.</p>
+<p>
+	So, what you can do is to refer demo file for developing the integration, as listed below , and when the integraion is ready, you can use Live API.</p>
+<h3 style="box-sizing: border-box; font-family: Roboto, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	Demo DataFeed Details</h3>
+<table class="table table-striped table-bordered" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; background-color: rgb(255, 255, 255); width: 1008px; max-width: 100%; margin-bottom: 20px; border: 1px solid rgb(221, 221, 221); color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box; background-color: rgb(249, 249, 249);">
+			<th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				Link For CSV Format</th>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				<a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=csv" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration: none;">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=csv</a></td>
+		</tr>
+		<tr style="box-sizing: border-box; background-color: rgb(249, 249, 249);">
+			<th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				Link For XML Format</th>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				<a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=xml" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration: none;">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=xml</a></td>
+		</tr>
+		<tr style="box-sizing: border-box; background-color: rgb(249, 249, 249);">
+			<th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				Link For JSON Format</th>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<td style="box-sizing: border-box; padding: 8px; line-height: 1.42857; vertical-align: top; border: 1px solid rgb(221, 221, 221);">
+				<a href="http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=json" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration: none;">http://demo.coupomated.com/apiv2/demoBasicFeed.php?key=de70-df65-72b8-d68f&amp;format=json</a></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+								</div>
+							</div>
+						</div>	
+						
+					</div>
+						</div> 
+    </div>
+	<style>
+.faqcat{font-size: 30px;}
+</style>				
+				
+			</div>
+
+            <!-- /.container-fluid -->
+        </div>
+		 <!-- /#page-wrapper -->
+</div>
+
+<script>
+$(document).ready(function(){
+	$('#btnDocModal1').click(function() { $('#docModal1').modal(); });
+	$('#btnDocModal2').click(function() { $('#docModal2').modal(); });
+	$('#btnDocModal3').click(function() { $('#docModal3').modal(); });
+	$('#btnDocModal4').click(function() { $('#docModal4').modal(); });
+	$('#btnDocModal5').click(function() { $('#docModal5').modal(); });
+	$('#btnDocModal6').click(function() { $('#docModal6').modal(); });
+	$('#btnDocModal7').click(function() { $('#docModal7').modal(); });
+	$('#btnDocModal8').click(function() { $('#docModal8').modal(); });
+	$('#btnDocModal9').click(function() { $('#docModal9').modal(); });
+	$('#btnDocModal10').click(function() { $('#docModal10').modal(); });
+	$('#btnDocModal11').click(function() { $('#docModal11').modal(); });
+
+});
+</script><div id="chatra" class="chatra--style-round chatra--side-right chatra--pos-bottom chatra--visible" style="width: 70px; height: 70px; transform: none; z-index: 9999;"><iframe frameborder="0" id="chatra__iframe" allowtransparency="true" src="./API Call_files/saved_resource.html" style="position: absolute;"></iframe></div></body></html>

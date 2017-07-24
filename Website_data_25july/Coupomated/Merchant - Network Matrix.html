@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://demo.coupomated.com/merchant-network-matrix -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="./Merchant - Network Matrix_files/css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="./Merchant - Network Matrix_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Merchant - Network Matrix_files/deeplink.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./Merchant - Network Matrix_files/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./Merchant - Network Matrix_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./Merchant - Network Matrix_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <script async="" src="./Merchant - Network Matrix_files/chatra.js.download"></script><script src="./Merchant - Network Matrix_files/jquery.min.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./Merchant - Network Matrix_files/bootstrap.min.js.download"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./Merchant - Network Matrix_files/metisMenu.min.js.download"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./Merchant - Network Matrix_files/sb-admin-2.js.download"></script>
+
+	<script src="./Merchant - Network Matrix_files/jquery.dataTables.min.js.download"></script>
+	 <script src="./Merchant - Network Matrix_files/dataTables.bootstrap.min.js.download"></script>
+	 <link href="./Merchant - Network Matrix_files/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="./Merchant - Network Matrix_files/chosen.min.css" rel="stylesheet">
+	<script src="./Merchant - Network Matrix_files/chosen.jquery.js.download"></script>
+	 <script src="./Merchant - Network Matrix_files/jquery.sortable.js.download"></script>
+	 <link rel="shortcut icon" href="http://demo.coupomated.com/assets/template/images/coupiliate-fev.png">
+    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
+    <script>
+    // tooltip demo
+    $('.tooltip-demo').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+			$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});
+    </script>
+
+<title>Merchant - Network Matrix</title>
+<style>#chatra{visibility:hidden;opacity:0;position:fixed;max-height:95%;max-width:90%;max-width:calc(100% - 40px);transition:0.2s linear;transition-property:visibility, opacity;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:auto;height:auto;min-height:0;min-width:0;display:block;box-sizing:content-box;padding:0;margin:0} #chatra.chatra--animating{transition:350ms cubic-bezier(.04,.74,.4,.98);transition-property:height, width, max-width, max-height, top, bottom, left, right, margin-bottom, visibility, opacity, transform, -webkit-transform, -moz-transform;}#chatra.chatra--animating.chatra--mobile-widget{transition:none;} #chatra.chatra--animating.chatra--style-round{transition:none;} #chatra.chatra--side-bottom{bottom:0;} #chatra.chatra--side-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--side-left{left:0;} #chatra.chatra--side-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--side-right{right:0;} #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--side-left.chatra--expanded{bottom:0;left:20px;} #chatra.chatra--side-right.chatra--expanded{bottom:0;right:20px;} #chatra.chatra--pos-right{right:20px;} #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--pos-left{left:20px;} #chatra.chatra--pos-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--pos-center{left:50%;} #chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded){bottom:100%;margin-bottom:-40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded){top:15px;} #chatra.chatra--pos-bottom:not(.chatra--expanded){bottom:40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--pos-middle:not(.chatra--expanded){bottom:50%;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--visible{visibility:visible;opacity:1;} #chatra.chatra--mobile-widget.chatra--pos-right{right:15px;} #chatra.chatra--mobile-widget.chatra--pos-left{left:15px;} #chatra.chatra--mobile-widget.chatra--expanded{max-width:none;max-height:none;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left{left:0;} body.chatra-mobile-widget-expanded{overflow:hidden !important;height:100% !important;width:100% !important;position:fixed !important;margin:0 !important;}#chatra__iframe{left:0;top:0;width:100%;max-width:100%;height:100%;max-height:100%;margin:0;display:block;background:transparent;} #chatra.chatra--correct-odd-width{padding-left:1px;}#chatra.chatra--correct-odd-width #chatra__iframe{left:1px;width:calc(100% - 1px);}#chatra.chatra--correct-odd-height{padding-top:1px;}#chatra.chatra--correct-odd-height #chatra__iframe{top:1px;height:calc(100% - 1px);}@media print {#chatra{display:none;}}</style></head>
+<body style="    background: ghostwhite;">
+<a href="http://demo.coupomated.com/merchant-network-matrix#" id="back-to-top" title="Back to top" class=""><i class="fa fa-arrow-circle-up"></i></a>
+
+<div id="Fragmentation" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fragmentation Message</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Confiramation Message-->
+<div id="Confirm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger btn-ok">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = '3mAERkC97H7xSh2Zg';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+<style>
+.filter{
+	margin-top: 10px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    border: 1px solid #eee;
+}
+</style>
+<div id="wrapper">
+        <!-- Navigation -->
+		 <script>
+$(document).ready(function(){
+		$(".dropdown_hov").hover(function(){
+			$('.dropdown-user').show();
+		});
+		
+		$(".dropdown-user").mouseleave(function(){
+			$(this).hide();
+		});
+		
+		$("body").click(function(){
+				$('.dropdown-user').hide();
+		});
+});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                				<a class="navbar-brand" href="http://demo.coupomated.com/Dashboard"><img src="./Merchant - Network Matrix_files/aceea-coupomated-1-.png" alt="logo" style="margin-top: -4px;width: 140px;"> </a>
+				            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				<li><a href="http://demo.coupomated.com/my-subscription">Subscribe Here</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.coupomated.com/merchant-network-matrix#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+					
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Global Notification
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Personal Notification
+								
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="http://demo.coupomated.com/notification">
+                                <strong>See All Notification</strong>
+                                <i class="fa fa-angle-right"></i>
+							</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                    <a class="dropdown-toggle dropdown_hov" data-toggle="dropdown" href="http://demo.coupomated.com/merchant-network-matrix#">
+						<span style="float:right;"><i class="fa fa-user fa-fw"></i>Welcome  ! </span><br>
+						
+						<span>(Plan: Starter -
+						<span style="color: #3c763d;font-weight: 600;">Active</span> ) <i class="fa fa-caret-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="http://demo.coupomated.com/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+						</li>
+					</ul>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu" style="
+					margin-top: 18px;">
+                       		
+						<li><a href="http://demo.coupomated.com/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+						<li class="active">
+							                            <a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-sitemap fa-fw"></i> Relationship<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level  collapse in">
+								
+								<li><a href="http://demo.coupomated.com/manage-network">Manage Networks </a></li>
+								 
+								<li><a href="http://demo.coupomated.com/network-preferences">Network Preferences</a></li>
+								
+								<li><a href="http://demo.coupomated.com/merchant-network-matrix" class="active">Merchant – Network Matrix</a></li>
+								
+                            </ul>
+                        </li>
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-rss fa-fw"></i> Feed Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/api-keys">API Keys  </a></li>
+								<li><a href="http://demo.coupomated.com/manage-merchant">Manage Merchants </a></li>
+									<li><a href="http://demo.coupomated.com/manage-category">Manage Categories</a> </li>
+									<li><a href="http://demo.coupomated.com/manage-offer-types">Manage Offer Types</a></li>
+									<li><a href="http://demo.coupomated.com/manage-datafeed-fields">Manage Datafeed Fields</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-list-alt fa-fw"></i> Manage Content Uniqueness<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/word-replacement">Word Replacement  </a></li>
+																		<li><a href="http://demo.coupomated.com/word-spinner">Word Spinner  </a></li>
+																		
+																		<li><a href="http://demo.coupomated.com/reconstruct-coupon-text">Reconstruct Coupon Text </a> </li>
+																</ul>
+						</li>
+						
+						
+												 
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-wordpress fa-fw"></i> WordPress Configuration<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level  collapse">
+								<li><a href="http://demo.coupomated.com/plugin-download">Plugin Download   </a></li>
+								<li><a href="http://demo.coupomated.com/merchants-master">Merchants Master   </a></li>
+								<li><a href="http://demo.coupomated.com/categories-master">Categories Master   </a> </li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-money fa-fw"></i> Coupilliate Reports<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/order-detail-report">Order Detail Report    </a></li>
+								<li><a href="http://demo.coupomated.com/earning-report"> Earning Report </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-tasks fa-fw"></i> Links &amp; Tools<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">                               
+								<li><a href="http://demo.coupomated.com/browse-coupons">Browse Coupons   </a></li>
+									<li><a href="http://demo.coupomated.com/merchants-hub">Merchants Hub </a></li>
+									<li><a href="http://demo.coupomated.com/network-hub">Network Hub </a></li>
+									<li><a href="http://demo.coupomated.com/wordpress-demo">WordPress Demo</a></li> 
+									<li><a href="http://demo.coupomated.com/link-builder">Link Builder </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-puzzle-piece fa-fw"></i> Add-on Services<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+							
+																		<li><a href="http://demo.coupomated.com/offer-banners">Offer Banners    </a></li>
+																	<li><a href="http://demo.coupomated.com/redirect-script">Redirect Script    </a></li>
+																</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-life-ring fa-fw"></i> Support<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/user-faq">FAQ</a></li>
+								<li><a href="http://demo.coupomated.com/contactus">Contact Us</a></li>
+								<li><a href="http://demo.coupomated.com/notification"> Notifications</a></li>
+							</ul>
+						</li>
+
+						<li>                            
+							<a href="http://demo.coupomated.com/merchant-network-matrix#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>                            
+							<ul class="nav nav-second-level collapse">                               								
+								<li><a href="http://demo.coupomated.com/account-information">Account Information  </a></li>
+								<li><a href="http://demo.coupomated.com/my-subscription">My Subscription </a></li>
+								
+								<li><a href="http://demo.coupomated.com/logout">Logout</a></li>                          
+							                        
+							</ul>                          
+						</li>	
+						
+						
+		
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>         <!-- Page Content -->
+        <div id="page-wrapper" style="min-height: 562px;">
+            <div class="container-fluid">
+                <div class="row">
+                     <style>
+.faqp{
+float: right;
+padding: 3px;
+border: 1px solid #337ab7;
+border-radius: 5px;
+text-decoration: underline;
+}
+</style>
+<div class="col-lg-12">
+	<h1 class="page-header">Merchant - Network Matrix</h1> 
+		<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	Here listed is merchant – network matrix automatically generated based on your preferences set at&nbsp;<a href="http://demo.coupomated.com/network-preferences" style="box-sizing: border-box; color: rgb(51, 122, 183); text-decoration: none; background-color: transparent;">Network Preferences</a>.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	Use Merchant – Network matrix to perform following actions;</p>
+<ul>
+	<li style="box-sizing: border-box;">
+		Edit the relationship with network by clicking Edit button.</li>
+	<li style="box-sizing: border-box;">
+		Activate / deactivate affiliate program for a merchant.</li>
+	<li style="box-sizing: border-box;">
+		Edit priorities so as to use alternate network when any network goes down / unavailable for redirection.</li>
+	<li style="box-sizing: border-box;">
+		Use quick search to find a specific network, merchant etc.</li>
+</ul>
+<br>
+	
+	</div> 
+                    <!-- /.col-lg-12 -->
+                </div>
+				
+				<label>Filter by : </label><br>
+				<div class="row filter">
+					<div class="col-md-4 stores">
+						<select class="form-control filter_stores chosen-select" name="filter_stores" style="display: none;">
+							<option value="0">All Stores</option>
+															<option value="1002">Amazon</option>
+															<option value="1003">Flipkart</option>
+															<option value="1004">Indiatimes Shopping</option>
+															<option value="1007">Snapdeal</option>
+															<option value="1008">GoDaddy</option>
+															<option value="1009">Paytm</option>
+															<option value="1011">Rediff Shopping</option>
+															<option value="1012">eBay</option>
+															<option value="1013">Jabong</option>
+															<option value="1014">ShopClues</option>
+															<option value="1019">Zomato</option>
+															<option value="1022">BookMyShow</option>
+															<option value="1023">Makemytrip</option>
+															<option value="1029">Uber</option>
+															<option value="1035">Cleartrip</option>
+															<option value="1040">Goibibo</option>
+															<option value="1041">Freecharge</option>
+															<option value="1046">Yatra</option>
+															<option value="1047">Redbus</option>
+															<option value="1051">Voonik</option>
+															<option value="1053">Pepperfry</option>
+															<option value="1054">NearBuy</option>
+															<option value="1057">Koovs</option>
+															<option value="1058">Bigbasket</option>
+															<option value="1060">FirstCry</option>
+															<option value="1063">Limeroad</option>
+															<option value="1064">Craftsvilla</option>
+															<option value="1065">BigRock</option>
+															<option value="1066">Myntra</option>
+															<option value="1067">Infibeam</option>
+															<option value="1069">Dominos</option>
+															<option value="1071">Homeshop18</option>
+															<option value="1072">Yepme</option>
+															<option value="1078">Mobikwik</option>
+															<option value="1079">Tolexo</option>
+															<option value="1083">Abof</option>
+															<option value="1087">Lenskart</option>
+															<option value="1088">Trendin</option>
+															<option value="1089">Urban Ladder</option>
+															<option value="1093">Naaptol</option>
+															<option value="1095">Puma</option>
+															<option value="1096">IXiGO</option>
+															<option value="1098">Printvenue</option>
+															<option value="1099">Zivame</option>
+															<option value="1100">American Swan</option>
+															<option value="1102">Vistaprint</option>
+															<option value="1103">Oyo Rooms</option>
+															<option value="1104">Abhibus</option>
+															<option value="1109">Foodpanda</option>
+															<option value="1110">Fabfurnish</option>
+															<option value="1113">Ola Cabs</option>
+															<option value="1118">Nykaa</option>
+															<option value="1120">Healthkart</option>
+															<option value="1121">Shoppers Stop</option>
+															<option value="1122">Swiggy</option>
+															<option value="1123">Industry Buying</option>
+															<option value="1127">Expedia</option>
+															<option value="1128">Fashion And You</option>
+															<option value="1135">Croma Retail</option>
+															<option value="1138">Purplle</option>
+															<option value="1141">Babyoye</option>
+															<option value="1143">Zoomcar</option>
+															<option value="1146">1mg</option>
+															<option value="1149">Ferns And Petals</option>
+															<option value="1156">Netmeds</option>
+															<option value="1160">Grofers</option>
+															<option value="1164">Travelguru</option>
+															<option value="1168">DogSpot</option>
+															<option value="1176">Pizza Hut</option>
+															<option value="1180">Clovia</option>
+															<option value="1182">Printland</option>
+															<option value="1183">Zovi</option>
+															<option value="1193">Caratlane</option>
+															<option value="1194">Telenor</option>
+															<option value="1196">Musafir</option>
+															<option value="1199">KFC</option>
+															<option value="1219">Safetykart</option>
+															<option value="1225">Travelyaari</option>
+															<option value="1234">Zoomin</option>
+															<option value="1256">Overcart</option>
+															<option value="1266">Savaari</option>
+															<option value="1300">Zopper</option>
+															<option value="1325">Faasos</option>
+															<option value="1346">GrocerMax</option>
+															<option value="1379">Pretty Secrets</option>
+															<option value="1465">McDonalds</option>
+															<option value="1474">Thats Personal</option>
+															<option value="1512">Campussutra</option>
+															<option value="2762">MI Xiaomi</option>
+															<option value="3720">Ajio</option>
+															<option value="3721">LeEco</option>
+															<option value="3722">Little App</option>
+															<option value="3723">Tata Cliq</option>
+															<option value="3728">Behrouz Biryani</option>
+															<option value="3729">Big Chemist</option>
+															<option value="3738">Medlife</option>
+															<option value="3739">Nnnow</option>
+															<option value="3740">Mr Voonik</option>
+															<option value="4098">Honor</option>
+															<option value="4579">Trivago</option>
+													</select><div class="chosen-container chosen-container-single" style="width: 315px;" title=""><a class="chosen-single" tabindex="-1"><span>All Stores</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+					</div>
+					
+					
+					<div class="col-md-4 network">
+						<select class="form-control filter_network chosen-select select2" name="filter_network" style="display: none;">
+							<option value="0">All Network</option>
+															<option value="1">Flipkart Direct</option>
+															<option value="2">Amazon Direct</option>
+															<option value="3">Optimise (OMG)</option>
+															<option value="4">Komli</option>
+															<option value="5">Snapdeal Direct</option>
+															<option value="6">vCommission</option>
+															<option value="7">Payoom</option>
+															<option value="8">iCubesWire</option>
+															<option value="9">Cuelinks</option>
+															<option value="10">DGM</option>
+															<option value="11">Coupilliate</option>
+															<option value="12">Tyroo</option>
+															<option value="13">eBay Direct</option>
+															<option value="14">ClickOnik</option>
+													</select><div class="chosen-container chosen-container-single" style="width: 315px;" title=""><a class="chosen-single" tabindex="-1"><span>All Network</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+					</div>
+
+					<div class="col-md-4">
+						<a class="btn btn-primary mer-filter" style="width:100%;"><i class="fa fa-filter"></i> Filter</a>
+					</div>
+					
+				</div><br>
+				<div class="row">
+					<a class="btn btn-success" href="http://demo.coupomated.com/add-network-matrix"><i class="fa fa-plus"></i> Add</a>
+					<a class="btn btn-default gen"><i class="fa fa-file-excel-o"></i> Export to Excel</a>
+				</div><br><br>
+								<div class="row">
+				<div class="col-md-12 table-responsive">
+					<div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+						<thead>
+							<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Merchant: activate to sort column descending" style="width: 234px;">Merchant</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Network: activate to sort column ascending" style="width: 183px;">Network</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Priority: activate to sort column ascending" style="width: 120px;">Priority</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="width: 314px;">Action</th></tr>
+						</thead>
+						<tfoot>
+							<tr><th rowspan="1" colspan="1">Merchant</th><th rowspan="1" colspan="1">Network</th><th rowspan="1" colspan="1">Priority</th><th rowspan="1" colspan="1">Action</th></tr>
+						</tfoot>
+						<tbody>
+													
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+														
+							 
+															
+						<tr style="background:#F7FCFE" role="row" class="odd">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_31" placeholder="Enter Affiliate ID" type="hidden" value="31">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1146">
+												1mg</a>
+																				</td>
+								<td>
+								Optimise (OMG)</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="even">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_82" placeholder="Enter Affiliate ID" type="hidden" value="82">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1430">
+												99tshirts</a>
+																				</td>
+								<td>
+								Komli</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="odd">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_16" placeholder="Enter Affiliate ID" type="hidden" value="16">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1083">
+												Abof</a>
+																				</td>
+								<td>
+								Optimise (OMG)</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="even">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_191" placeholder="Enter Affiliate ID" type="hidden" value="191">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1025">
+												Agoda</a>
+																				</td>
+								<td>
+								vCommission</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="odd">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_74" placeholder="Enter Affiliate ID" type="hidden" value="74">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1235">
+												Air</a>
+																				</td>
+								<td>
+								Komli</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="even">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_1" placeholder="Enter Affiliate ID" type="hidden" value="1">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1002">
+												Amazon</a>
+																				</td>
+								<td>
+								Optimise (OMG)</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="odd">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_21" placeholder="Enter Affiliate ID" type="hidden" value="21">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1100">
+												American Swan</a>
+																				</td>
+								<td>
+								Optimise (OMG)</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="even">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_209" placeholder="Enter Affiliate ID" type="hidden" value="209">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1619">
+												Amzer</a>
+																				</td>
+								<td>
+								vCommission</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="odd">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_212" placeholder="Enter Affiliate ID" type="hidden" value="212">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1898">
+												Aplava</a>
+																				</td>
+								<td>
+								vCommission</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr><tr style="background:#F7FCFE" role="row" class="even">
+							    <td class="sorting_1"><input class="form-control" id="usm_id_76" placeholder="Enter Affiliate ID" type="hidden" value="76">
+								
+																			<a href="http://demo.coupomated.com/merchant_info/1248">
+												Archies Online</a>
+																				</td>
+								<td>
+								Komli</td>
+									<td>1</td>
+									<td width="35%">
+									<a class="btn btn-warning">
+										<i class="fa fa-remove"></i> Deactivate									</a>
+									<a class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
+									<a class="btn btn-danger"><i class="fa  fa-trash-o"></i> Delete</a>
+								
+								
+								</td>
+							</tr></tbody>
+					</table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of 142 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example_previous"><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button disabled" id="example_ellipsis"><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="6" tabindex="0">…</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="7" tabindex="0">15</a></li><li class="paginate_button next" id="example_next"><a href="http://demo.coupomated.com/merchant-network-matrix#" aria-controls="example" data-dt-idx="8" tabindex="0">Next</a></li></ul></div></div></div></div>
+					</div>
+				
+				</div>
+				<style>
+.faqcat{font-size: 30px;}
+</style>                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+		 <!-- /#page-wrapper -->
+</div>
+
+<script type="text/javascript">	
+function dldelete(usm_id)	
+{				
+
+	$('#Confirm').modal("show");
+	$('#Confirm .modal-footer .btn-ok').click(function()
+	{
+		$.ajax({		
+			type: "POST",		
+			url: "http://demo.coupomated.com/Genrate/Delete",	
+			data:{				
+				usm_id: usm_id								
+			},		
+			cache: false,		
+			success: function(result)
+			{			
+				//alert(result);			
+				location.reload();		
+			}		
+		});		
+		return false; 
+		
+	});
+	/* if (confirm('Are you sure you want to delete this?')) {
+		$.ajax({		
+			type: "POST",		
+			url: "http://demo.coupomated.com/Genrate/Delete",		
+			data:{				
+				usm_id: usm_id						
+			},		
+		cache: false,		
+		success: function(result)
+		{			
+			alert(result);			
+			location.reload();		
+		}		
+		});		
+		return false; 	
+	} */
+}
+</script>
+
+<script type="text/javascript">	
+	function dlstatus(usmid,flag)	
+	{				
+		$.ajax({		
+		type: "POST",		
+		url: "http://demo.coupomated.com/Genrate/ChangeStaffStatus",		
+		data:{							
+		usmid: usmid,
+		flag : flag
+		},		
+		cache: false,		
+		success: 
+		function(result)
+		{			
+			alert(result);			
+			location.reload();		
+		}		
+		});		
+		return false; 	
+	}
+	
+	$(document).ready(function(){
+		$('.mer-filter').click(function()
+		{
+			var store = $('.filter_stores').val();
+			var network = $('.filter_network').val();
+			var catefory = $('.filter_category').val();
+			var popularity = $('.filter_popularity').val();
+			var url = store+'/'+network;
+			
+			window.location.href='http://demo.coupomated.com/merchant-network-matrix'+'/'+url;
+		});
+	});
+</script>
+
+<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+	
+$(document).ready(function(){
+	$('.faqp a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+		
+	    var target = this.hash,
+	    $target = $(target);
+		
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+  </script>
+<style>
+	#footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	color: #fff;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+	text-align: center;
+	border-top: 1px solid #A9A9A9;
+		
+	}
+.footer-menu{
+	clear: none;
+    display: block;
+      padding-top: 22px;
+    margin: 0;
+}
+	.footer-menu li{ display:block;float:left;position: relative;    list-style: none;
+    margin: 0;
+    padding: 0;}
+	.footer-menu li a {
+    padding: 30px 20px 32px;color: #fff;
+	}
+	.text{padding:12px;}
+	
+</style>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="footer-menu">
+						                            <li><a href="http://demo.coupomated.com/about-us">About Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/features">Features </a></li>
+			                            <li><a href="http://demo.coupomated.com/plans">Plans </a></li>
+			                            <li><a href="http://demo.coupomated.com/contact-us">Contact Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/terms-and-privacy-policy">Terms &amp; Privacy Policy </a></li>
+			                            <li><a href="http://demo.coupomated.com/request-a-demo">Request a Demo </a></li>
+			                            <li><a href="http://demo.coupomated.com/services">Services </a></li>
+			                            <li><a href="http://demo.coupomated.com/how-it-works">How It Works </a></li>
+			                            <li><a href="http://demo.coupomated.com/faq">FAQ  </a></li>
+							</ul>
+			</div>
+			<div class="col-md-12 text">
+				<p>© 2016 - Coupomated.com. All Rights Reserved.</p>
+				<p>Made in India with Passion</p>
+			</div>
+			</div>
+		</div>
+</footer><div id="chatra" class="chatra--style-round chatra--side-right chatra--pos-bottom chatra--visible" style="width: 70px; height: 70px; transform: none; z-index: 9999;"><iframe frameborder="0" id="chatra__iframe" allowtransparency="true" src="./Merchant - Network Matrix_files/saved_resource.html" style="position: absolute;"></iframe></div></body></html>

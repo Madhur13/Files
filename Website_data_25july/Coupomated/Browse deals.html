@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://demo.coupomated.com/browse-coupons/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href="./Browse deals_files/css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="./Browse deals_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Browse deals_files/deeplink.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./Browse deals_files/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./Browse deals_files/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./Browse deals_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <script async="" src="./Browse deals_files/chatra.js.download"></script><script src="./Browse deals_files/jquery.min.js.download"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./Browse deals_files/bootstrap.min.js.download"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./Browse deals_files/metisMenu.min.js.download"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="./Browse deals_files/sb-admin-2.js.download"></script>
+
+	<script src="./Browse deals_files/jquery.dataTables.min.js.download"></script>
+	 <script src="./Browse deals_files/dataTables.bootstrap.min.js.download"></script>
+	 <link href="./Browse deals_files/dataTables.bootstrap.min.css" rel="stylesheet">
+	<link href="./Browse deals_files/chosen.min.css" rel="stylesheet">
+	<script src="./Browse deals_files/chosen.jquery.js.download"></script>
+	 <script src="./Browse deals_files/jquery.sortable.js.download"></script>
+	 <link rel="shortcut icon" href="http://demo.coupomated.com/assets/template/images/coupiliate-fev.png">
+    <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
+    <script>
+    // tooltip demo
+    $('.tooltip-demo').tooltip({
+        selector: "[data-toggle=tooltip]",
+        container: "body"
+    })
+
+    // popover demo
+    $("[data-toggle=popover]")
+        .popover()
+			$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});
+    </script>
+
+<title>Browse deals</title>
+<style>#chatra{visibility:hidden;opacity:0;position:fixed;max-height:95%;max-width:90%;max-width:calc(100% - 40px);transition:0.2s linear;transition-property:visibility, opacity;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:auto;height:auto;min-height:0;min-width:0;display:block;box-sizing:content-box;padding:0;margin:0} #chatra.chatra--animating{transition:350ms cubic-bezier(.04,.74,.4,.98);transition-property:height, width, max-width, max-height, top, bottom, left, right, margin-bottom, visibility, opacity, transform, -webkit-transform, -moz-transform;}#chatra.chatra--animating.chatra--mobile-widget{transition:none;} #chatra.chatra--animating.chatra--style-round{transition:none;} #chatra.chatra--side-bottom{bottom:0;} #chatra.chatra--side-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--side-left{left:0;} #chatra.chatra--side-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--side-right{right:0;} #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--side-left.chatra--expanded{bottom:0;left:20px;} #chatra.chatra--side-right.chatra--expanded{bottom:0;right:20px;} #chatra.chatra--pos-right{right:20px;} #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded){right:15px;} #chatra.chatra--pos-left{left:20px;} #chatra.chatra--pos-left.chatra--style-round:not(.chatra--expanded){left:15px;} #chatra.chatra--pos-center{left:50%;} #chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded){bottom:100%;margin-bottom:-40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded){top:15px;} #chatra.chatra--pos-bottom:not(.chatra--expanded){bottom:40px;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--pos-bottom.chatra--style-round:not(.chatra--expanded){bottom:15px;} #chatra.chatra--pos-middle:not(.chatra--expanded){bottom:50%;max-height:90%;max-height:calc(100% - 80px);} #chatra.chatra--visible{visibility:visible;opacity:1;} #chatra.chatra--mobile-widget.chatra--pos-right{right:15px;} #chatra.chatra--mobile-widget.chatra--pos-left{left:15px;} #chatra.chatra--mobile-widget.chatra--expanded{max-width:none;max-height:none;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center{left:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right{right:0;} #chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left{left:0;} body.chatra-mobile-widget-expanded{overflow:hidden !important;height:100% !important;width:100% !important;position:fixed !important;margin:0 !important;}#chatra__iframe{left:0;top:0;width:100%;max-width:100%;height:100%;max-height:100%;margin:0;display:block;background:transparent;} #chatra.chatra--correct-odd-width{padding-left:1px;}#chatra.chatra--correct-odd-width #chatra__iframe{left:1px;width:calc(100% - 1px);}#chatra.chatra--correct-odd-height{padding-top:1px;}#chatra.chatra--correct-odd-height #chatra__iframe{top:1px;height:calc(100% - 1px);}@media print {#chatra{display:none;}}</style></head>
+<body style="    background: ghostwhite;">
+<a href="http://demo.coupomated.com/browse-coupons/#" id="back-to-top" title="Back to top" class=""><i class="fa fa-arrow-circle-up"></i></a>
+
+<div id="Fragmentation" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fragmentation Message</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Confiramation Message-->
+<div id="Confirm" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a class="btn btn-danger btn-ok">Delete</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = '3mAERkC97H7xSh2Zg';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+<style>
+	.btn .btn-primary:hover{
+	color: #fff;
+	outline: none;
+	box-shadow: none;
+	opacity: .8;
+	background-color: #4fcccd;
+    border-color: #4fcccd;
+	}
+	
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('.filterApi').click(function() {
+			var sel_cat = $('select[name=filter_category]').val();
+			var sel_store = $('select[name=filter_store]').val();
+			var sel_type = $('select[name=filter_type]').val();
+			
+			
+			var url = "http://demo.coupomated.com/browse-coupons"+'/'+sel_store+'/'+sel_type+'/'+sel_cat;
+			window.location.href = url;
+			
+			
+		});
+		
+		$('.regen-data').click(function() {
+			
+			var user_id = '511';
+			var plan_id = '4';
+			var user_key = $('#fkey').text();  
+			
+			$.ajax({		
+				type: "POST",		
+				url: "http://demo.coupomated.com/apiv2/runUser.php?user_id="+user_id+"&plan_id="+plan_id,		
+				data:{				
+					user_id: user_id,
+					plan_id:plan_id,
+					user_key: user_key
+				},		
+				cache: false,		
+				success: function(result)
+				{			
+					alert('Setting Refreshed');
+					location.reload();
+				}		
+			});		
+		});
+		
+		});
+</script>
+<div id="wrapper">
+        <!-- Navigation -->
+		 <script>
+$(document).ready(function(){
+		$(".dropdown_hov").hover(function(){
+			$('.dropdown-user').show();
+		});
+		
+		$(".dropdown-user").mouseleave(function(){
+			$(this).hide();
+		});
+		
+		$("body").click(function(){
+				$('.dropdown-user').hide();
+		});
+});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                				<a class="navbar-brand" href="http://demo.coupomated.com/Dashboard"><img src="./Browse deals_files/aceea-coupomated-1-.png" alt="logo" style="margin-top: -4px;width: 140px;"> </a>
+				            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+				<li><a href="http://demo.coupomated.com/my-subscription">Subscribe Here</a></li>
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.coupomated.com/browse-coupons/#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+					
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Global Notification
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+							<div style="padding: 10px;">
+								<i class="fa fa-bell-o fa-fw"></i> Personal Notification
+								
+								<ul>
+									<li>No new notification!</li>								</ul>
+							</div>
+							
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="http://demo.coupomated.com/notification">
+                                <strong>See All Notification</strong>
+                                <i class="fa fa-angle-right"></i>
+							</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                    <a class="dropdown-toggle dropdown_hov" data-toggle="dropdown" href="http://demo.coupomated.com/browse-coupons/#">
+						<span style="float:right;"><i class="fa fa-user fa-fw"></i>Welcome  ! </span><br>
+						
+						<span>(Plan: Starter -
+						<span style="color: #3c763d;font-weight: 600;">Active</span> ) <i class="fa fa-caret-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-user" style="display: none;">
+						<li><a href="http://demo.coupomated.com/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+						</li>
+					</ul>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu" style="
+					margin-top: 18px;">
+                       		
+						<li><a href="http://demo.coupomated.com/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+						<li>
+							                            <a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-sitemap fa-fw"></i> Relationship<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level  collapse">
+								
+								<li><a href="http://demo.coupomated.com/manage-network">Manage Networks </a></li>
+								 
+								<li><a href="http://demo.coupomated.com/network-preferences">Network Preferences</a></li>
+								
+								<li><a href="http://demo.coupomated.com/merchant-network-matrix">Merchant – Network Matrix</a></li>
+								
+                            </ul>
+                        </li>
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-rss fa-fw"></i> Feed Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/api-keys">API Keys  </a></li>
+								<li><a href="http://demo.coupomated.com/manage-merchant">Manage Merchants </a></li>
+									<li><a href="http://demo.coupomated.com/manage-category">Manage Categories</a> </li>
+									<li><a href="http://demo.coupomated.com/manage-offer-types">Manage Offer Types</a></li>
+									<li><a href="http://demo.coupomated.com/manage-datafeed-fields">Manage Datafeed Fields</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-list-alt fa-fw"></i> Manage Content Uniqueness<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/word-replacement">Word Replacement  </a></li>
+																		<li><a href="http://demo.coupomated.com/word-spinner">Word Spinner  </a></li>
+																		
+																		<li><a href="http://demo.coupomated.com/reconstruct-coupon-text">Reconstruct Coupon Text </a> </li>
+																</ul>
+						</li>
+						
+						
+												 
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-wordpress fa-fw"></i> WordPress Configuration<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level  collapse">
+								<li><a href="http://demo.coupomated.com/plugin-download">Plugin Download   </a></li>
+								<li><a href="http://demo.coupomated.com/merchants-master">Merchants Master   </a></li>
+								<li><a href="http://demo.coupomated.com/categories-master">Categories Master   </a> </li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-money fa-fw"></i> Coupilliate Reports<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/order-detail-report">Order Detail Report    </a></li>
+								<li><a href="http://demo.coupomated.com/earning-report"> Earning Report </a></li>
+							</ul>
+						</li>
+						
+						<li class="active">
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-tasks fa-fw"></i> Links &amp; Tools<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse in">                               
+								<li><a href="http://demo.coupomated.com/browse-coupons" class="active">Browse Coupons   </a></li>
+									<li><a href="http://demo.coupomated.com/merchants-hub">Merchants Hub </a></li>
+									<li><a href="http://demo.coupomated.com/network-hub">Network Hub </a></li>
+									<li><a href="http://demo.coupomated.com/wordpress-demo">WordPress Demo</a></li> 
+									<li><a href="http://demo.coupomated.com/link-builder">Link Builder </a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-puzzle-piece fa-fw"></i> Add-on Services<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+							
+																		<li><a href="http://demo.coupomated.com/offer-banners">Offer Banners    </a></li>
+																	<li><a href="http://demo.coupomated.com/redirect-script">Redirect Script    </a></li>
+																</ul>
+						</li>
+						
+						<li>
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-life-ring fa-fw"></i> Support<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level collapse">
+								<li><a href="http://demo.coupomated.com/user-faq">FAQ</a></li>
+								<li><a href="http://demo.coupomated.com/contactus">Contact Us</a></li>
+								<li><a href="http://demo.coupomated.com/notification"> Notifications</a></li>
+							</ul>
+						</li>
+
+						<li>                            
+							<a href="http://demo.coupomated.com/browse-coupons/#"><i class="fa fa-user fa-fw"></i> My Account<span class="fa arrow"></span></a>                            
+							<ul class="nav nav-second-level collapse">                               								
+								<li><a href="http://demo.coupomated.com/account-information">Account Information  </a></li>
+								<li><a href="http://demo.coupomated.com/my-subscription">My Subscription </a></li>
+								
+								<li><a href="http://demo.coupomated.com/logout">Logout</a></li>                          
+							                        
+							</ul>                          
+						</li>	
+						
+						
+		
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>         <!-- Page Content -->
+        <div id="page-wrapper" style="min-height: 562px;">
+            <div class="container-fluid">
+                <div class="row">
+                     <style>
+.faqp{
+float: right;
+padding: 3px;
+border: 1px solid #337ab7;
+border-radius: 5px;
+text-decoration: underline;
+}
+</style>
+<div class="col-lg-12">
+	<h1 class="page-header">Browse Coupons</h1> 
+		<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	Based on your settings, configuration and content uniqueness features, Coupon data feed content is populated here.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Roboto, sans-serif; font-size: 14px; line-height: 20px;">
+	In case, recently you've changed some parameters for any datafeed related settings or content, please click on Re-generate Data to enable reflecting the changes in data.</p>
+<br>
+	
+	</div> 
+                   
+                </div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="regen-msg"></p>
+						<a class="btn btn-primary regen-data">Re-Generate Data</a>
+						<a class="btn btn-primary regen-link">Re-Generate Links</a>
+						<br><br>
+					</div>
+				</div>
+				
+								<div class="row">
+					
+					<div class="col-md-3 popularity">
+						<select data-placeholder="Choose a Store..." class="form-control filter_store chosen-select" name="filter_store" style="display: none;">
+							
+							<option value="0">All Stores</option>
+															<option value="1002">Amazon</option>
+															<option value="1003">Flipkart</option>
+															<option value="1004">Indiatimes Shopping</option>
+															<option value="1007">Snapdeal</option>
+															<option value="1008">GoDaddy</option>
+															<option value="1009">Paytm</option>
+															<option value="1011">Rediff Shopping</option>
+															<option value="1012">eBay</option>
+															<option value="1013">Jabong</option>
+															<option value="1014">ShopClues</option>
+															<option value="1019">Zomato</option>
+															<option value="1022">BookMyShow</option>
+															<option value="1023">Makemytrip</option>
+															<option value="1029">Uber</option>
+															<option value="1035">Cleartrip</option>
+															<option value="1040">Goibibo</option>
+															<option value="1041">Freecharge</option>
+															<option value="1046">Yatra</option>
+															<option value="1047">Redbus</option>
+															<option value="1051">Voonik</option>
+															<option value="1053">Pepperfry</option>
+															<option value="1054">NearBuy</option>
+															<option value="1057">Koovs</option>
+															<option value="1058">Bigbasket</option>
+															<option value="1060">FirstCry</option>
+															<option value="1063">Limeroad</option>
+															<option value="1064">Craftsvilla</option>
+															<option value="1065">BigRock</option>
+															<option value="1066">Myntra</option>
+															<option value="1067">Infibeam</option>
+															<option value="1069">Dominos</option>
+															<option value="1071">Homeshop18</option>
+															<option value="1072">Yepme</option>
+															<option value="1078">Mobikwik</option>
+															<option value="1079">Tolexo</option>
+															<option value="1083">Abof</option>
+															<option value="1087">Lenskart</option>
+															<option value="1088">Trendin</option>
+															<option value="1089">Urban Ladder</option>
+															<option value="1093">Naaptol</option>
+															<option value="1095">Puma</option>
+															<option value="1096">IXiGO</option>
+															<option value="1098">Printvenue</option>
+															<option value="1099">Zivame</option>
+															<option value="1100">American Swan</option>
+															<option value="1102">Vistaprint</option>
+															<option value="1103">Oyo Rooms</option>
+															<option value="1104">Abhibus</option>
+															<option value="1109">Foodpanda</option>
+															<option value="1110">Fabfurnish</option>
+															<option value="1113">Ola Cabs</option>
+															<option value="1118">Nykaa</option>
+															<option value="1120">Healthkart</option>
+															<option value="1121">Shoppers Stop</option>
+															<option value="1122">Swiggy</option>
+															<option value="1123">Industry Buying</option>
+															<option value="1127">Expedia</option>
+															<option value="1128">Fashion And You</option>
+															<option value="1135">Croma Retail</option>
+															<option value="1138">Purplle</option>
+															<option value="1141">Babyoye</option>
+															<option value="1143">Zoomcar</option>
+															<option value="1146">1mg</option>
+															<option value="1149">Ferns And Petals</option>
+															<option value="1156">Netmeds</option>
+															<option value="1160">Grofers</option>
+															<option value="1164">Travelguru</option>
+															<option value="1168">DogSpot</option>
+															<option value="1176">Pizza Hut</option>
+															<option value="1180">Clovia</option>
+															<option value="1182">Printland</option>
+															<option value="1183">Zovi</option>
+															<option value="1193">Caratlane</option>
+															<option value="1194">Telenor</option>
+															<option value="1196">Musafir</option>
+															<option value="1199">KFC</option>
+															<option value="1219">Safetykart</option>
+															<option value="1225">Travelyaari</option>
+															<option value="1234">Zoomin</option>
+															<option value="1256">Overcart</option>
+															<option value="1266">Savaari</option>
+															<option value="1300">Zopper</option>
+															<option value="1325">Faasos</option>
+															<option value="1346">GrocerMax</option>
+															<option value="1379">Pretty Secrets</option>
+															<option value="1465">McDonalds</option>
+															<option value="1474">Thats Personal</option>
+															<option value="1512">Campussutra</option>
+															<option value="2762">MI Xiaomi</option>
+															<option value="3720">Ajio</option>
+															<option value="3721">LeEco</option>
+															<option value="3722">Little App</option>
+															<option value="3723">Tata Cliq</option>
+															<option value="3728">Behrouz Biryani</option>
+															<option value="3729">Big Chemist</option>
+															<option value="3738">Medlife</option>
+															<option value="3739">Nnnow</option>
+															<option value="3740">Mr Voonik</option>
+															<option value="4098">Honor</option>
+															<option value="4579">Trivago</option>
+													</select><div class="chosen-container chosen-container-single" style="width: 230px;" title=""><a class="chosen-single" tabindex="-1"><span>All Stores</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+					</div>
+					
+					<div class="col-md-3 type">
+						<select class="form-control filter_type select2" name="filter_type">
+							
+							<option value="0">All Type</option>
+							<option value="coupon">Coupon</option>
+							<option value="discount">Offer</option>
+							
+						</select>
+					</div>
+					
+					<div class="col-md-3 count">
+						<select class="form-control filter_category select2" name="filter_category">
+							<option value="0">All Category</option>
+															<option value="101">Electronics</option>
+															<option value="102">Cameras &amp; Accessories</option>
+															<option value="103">Audio, Video &amp; Home Entertainment</option>
+															<option value="104">Computer Accessories</option>
+															<option value="105">Laptops and  Desktops</option>
+															<option value="106">Mobile &amp; Tablets</option>
+															<option value="107">Mobiles &amp; Tablet Accessories</option>
+															<option value="108">Televisions</option>
+															<option value="109">Fashion</option>
+															<option value="110">Fashion Accessories</option>
+															<option value="111">Clothing</option>
+															<option value="112">Jewellery</option>
+															<option value="113">Nightwear &amp; Lingerie</option>
+															<option value="114">Sunglasses &amp; Contact Lens</option>
+															<option value="115">Watches</option>
+															<option value="116">Footwear</option>
+															<option value="117">Luggage &amp; Bags</option>
+															<option value="118">Baby &amp; Kids</option>
+															<option value="119">Baby Footwear</option>
+															<option value="120">Baby Care</option>
+															<option value="121">Baby &amp; Kids Clothing</option>
+															<option value="122">Diapering</option>
+															<option value="123">Baby &amp; Kids Fashion Accessories</option>
+															<option value="124">Toys</option>
+															<option value="125">Home &amp; Kitchen</option>
+															<option value="126">Furniture</option>
+															<option value="127">Home Decor &amp; Furnishing</option>
+															<option value="128">Home Appliances</option>
+															<option value="129">Kitchen Appliances</option>
+															<option value="130">Kitchenware &amp; Dinnerware</option>
+															<option value="131">Beauty, Personal &amp; Health Care</option>
+															<option value="132">Beauty &amp; Personal Care</option>
+															<option value="133">Perfumes &amp; Deodorants</option>
+															<option value="134">Personal Grooming Appliances</option>
+															<option value="135">Sports &amp; Fitness Equipment</option>
+															<option value="136">Medicine &amp; Health Supplement</option>
+															<option value="137">Health Care Devices</option>
+															<option value="138">Recharge &amp; Bill Payment</option>
+															<option value="139">Mobile, DTH Recharge</option>
+															<option value="140">Bill Payment</option>
+															<option value="141">Travel</option>
+															<option value="142">Bus</option>
+															<option value="143">Flights</option>
+															<option value="144">Holiday Packages</option>
+															<option value="145">Hotels</option>
+															<option value="146">Cab &amp; Auto</option>
+															<option value="147">Grocery, Food &amp; Beverages</option>
+															<option value="148">Food &amp; Beverages</option>
+															<option value="149">Chocolates, Cakes &amp; Sweets</option>
+															<option value="150">Restaurants</option>
+															<option value="151">Grocery</option>
+															<option value="152">Office Supplies &amp; Stationaries</option>
+															<option value="153">Education And Stationaries</option>
+															<option value="154">Books</option>
+															<option value="155">Office Supplies</option>
+															<option value="156">Custom Products</option>
+															<option value="157">Entertainment, Media &amp; Software</option>
+															<option value="158">Music, Movies and Ticket Booking</option>
+															<option value="159">Web Hosting &amp; Domains</option>
+															<option value="160">Software</option>
+															<option value="161">Games &amp; Entertainment</option>
+															<option value="162">Flowers &amp; Gift Cards</option>
+															<option value="163">Gifts &amp; Flowers</option>
+															<option value="164">Gift Cards</option>
+															<option value="165">Others</option>
+															<option value="166">Automotive</option>
+															<option value="167">Business</option>
+															<option value="168">Wallet &amp; Payment Gateways</option>
+															<option value="169">Gardening Products</option>
+															<option value="170">General Services</option>
+															<option value="171">Industrial Supplies</option>
+															<option value="172">Animals &amp; Pet Supplies</option>
+															<option value="173">Bank Specific Offers</option>
+															<option value="174">HDFC Bank</option>
+															<option value="175">ICICI Bank</option>
+															<option value="176">SBI Card</option>
+															<option value="177">AXIS Bank</option>
+															<option value="178">Citibank</option>
+															<option value="179">Kotak Bank</option>
+															<option value="180">American Express Bank</option>
+															<option value="181">Deutsche Bank</option>
+															<option value="182">IndusInd Bank</option>
+															<option value="183">Standard Chartered</option>
+															<option value="184"> Yes Bank</option>
+													</select>
+					</div>
+					
+					<div class="col-md-3">
+						<a class="btn btn-primary filterApi" id="filterApi" style="width:100%"><i class="fa fa-filter"></i> Filter</a>
+					</div>
+					<div class="col-md-12">
+						<br><label>Sample Data from Latest File </label>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-12 table-responsive">
+						<div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+							<thead>
+								<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Coupomated Coupon ID										: activate to sort column descending" style="width: 104px;">Coupomated Coupon ID										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Coupon Title										: activate to sort column ascending" style="width: 50px;">Coupon Title										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Coupon Description										: activate to sort column ascending" style="width: 71px;">Coupon Description										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Coupon Code										: activate to sort column ascending" style="width: 74px;">Coupon Code										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Coupon Type										: activate to sort column ascending" style="width: 49px;">Coupon Type										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Landing Page										: activate to sort column ascending" style="width: 966px;">Landing Page										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Validity										: activate to sort column ascending" style="width: 57px;">Validity										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Offer Value										: activate to sort column ascending" style="width: 46px;">Offer Value										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Category IDs										: activate to sort column ascending" style="width: 497px;">Category IDs										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Categories										: activate to sort column ascending" style="width: 217px;">Categories										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Merchant ID										: activate to sort column ascending" style="width: 60px;">Merchant ID										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Store Name										: activate to sort column ascending" style="width: 44px;">Store Name										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Validity Date										: activate to sort column ascending" style="width: 46px;">Validity Date										</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Coupon Created Date: activate to sort column ascending" style="width: 49px;">Coupon Created Date</th></tr>
+							</thead>
+							<tfoot>
+								<tr><th rowspan="1" colspan="1">Coupomated Coupon ID										</th><th rowspan="1" colspan="1">Coupon Title										</th><th rowspan="1" colspan="1">Coupon Description										</th><th rowspan="1" colspan="1">Coupon Code										</th><th rowspan="1" colspan="1">Coupon Type										</th><th rowspan="1" colspan="1">Landing Page										</th><th rowspan="1" colspan="1">Validity										</th><th rowspan="1" colspan="1">Offer Value										</th><th rowspan="1" colspan="1">Category IDs										</th><th rowspan="1" colspan="1">Categories										</th><th rowspan="1" colspan="1">Merchant ID										</th><th rowspan="1" colspan="1">Store Name										</th><th rowspan="1" colspan="1">Validity Date										</th><th rowspan="1" colspan="1">Coupon Created Date</th></tr>
+							</tfoot>
+							
+							
+							<tbody>
+																
+																		
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																			
+																<tr role="row" class="odd">
+																							<td class="sorting_1">723660000761635</td>
+																							<td>Purchase of Rs. 999 &amp; above and get extra 10% OFF by Yes Bank offer</td>
+																							<td>Awesome offer from Trendin. Apply this Coupon and get discount of Rs. 999 from Trendin. Coupon expires on 24 May 2016. Encash Rs. 999 on 999 or listed on the listing page. This Coupon is redeemable to all users. Make payment using Yes Bank# to be eligible to redeem this Coupon. Click on Get Code to unlock coupon and visit merchant. </td>
+																							<td>YESTRENDIN</td>
+																							<td>coupon</td>
+																							<td>http://www.trendin.com/yes-bank-offer-466</td>
+																							<td>1464028200</td>
+																							<td>Rs. 999</td>
+																							<td>111109</td>
+																							<td>Fashion|,Clothing</td>
+																							<td>1088</td>
+																							<td>Trendin</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="even">
+																							<td class="sorting_1">733110000735714</td>
+																							<td>Kurtis at Flat 50% OFF</td>
+																							<td>Awesome offer from Voonik. Offer expires on 24 May 2016. Apply this Offer and get discount of 50% from Voonik. Get 50% on Kurtis listed on the listing page. This Offer is applicable to all users. Click on Get Offer to visit landing page</td>
+																							<td></td>
+																							<td>discount</td>
+																							<td>http://www.voonik.com/latest/kurtas-kurtis</td>
+																							<td>1464028200</td>
+																							<td>50%</td>
+																							<td>111109</td>
+																							<td>Fashion|,Clothing</td>
+																							<td>1051</td>
+																							<td>Voonik</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="odd">
+																							<td class="sorting_1">779240000728014</td>
+																							<td>Get RS. 5000 worth Vouchers free ojn every bus ticket booking</td>
+																							<td>Astonishing offer from Goibibo. Get Rs 5000 on Every Bus Ticket Booking listed on the listing page. Use this Coupon and get discount of Rs 5000 from Goibibo. This Coupon is usable to all users. Click on Get Code to unlock coupon and visit merchant. Coupon expires on 25 May 2016.</td>
+																							<td>GO5000</td>
+																							<td>coupon</td>
+																							<td>http://www.goibibo.com/offers/trident-hotels/</td>
+																							<td>1464114600</td>
+																							<td>Rs 5000</td>
+																							<td>142141154</td>
+																							<td>Bus|,Books|,Travel</td>
+																							<td>1040</td>
+																							<td>Goibibo</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="even">
+																							<td class="sorting_1">802410000703514</td>
+																							<td>Book Hotels in Praga Greece at Best Price</td>
+																							<td>Great offer from Booking.com. Offer expires on 01 Jun 2016. This Offer is usable to all users. Click on Get Offer to visit landing page Get DISCOUNT on Best Price For listed on the listing page. </td>
+																							<td></td>
+																							<td>discount</td>
+																							<td>http://www.booking.com/index.en-gb.html?afsrc=1&amp;aid=866145&amp;label=parga</td>
+																							<td>1464719400</td>
+																							<td>DISCOUNT</td>
+																							<td>144141150</td>
+																							<td>Holiday Packages|,Travel|,Restaurants</td>
+																							<td>1005</td>
+																							<td>Booking.com</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="odd">
+																							<td class="sorting_1">850430000737114</td>
+																							<td>Table lamps at additional 20% discount.</td>
+																							<td>Best offer from Pepperfry. Utilize this Coupon and get discount of 20% from Pepperfry. Click on Get Code to unlock coupon and visit merchant. Coupon expires on 24 May 2016. This Coupon is applicable to all users. </td>
+																							<td>LAMPID20</td>
+																							<td>coupon</td>
+																							<td>http://www.pepperfry.com/lamps-lighting-table-lamps.html</td>
+																							<td>1464028200</td>
+																							<td>20%</td>
+																							<td>126125</td>
+																							<td>Home &amp; Kitchen|,Furniture</td>
+																							<td>1053</td>
+																							<td>Pepperfry</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="even">
+																							<td class="sorting_1">873920600728728</td>
+																							<td>Offer for new users, Rs. 50 cashback on recharge of Rs. 50 &amp; above</td>
+																							<td>Astonishing offer from Freecharge. Click on Get Code to unlock coupon and visit merchant. Apply this Coupon and get cashback of Rs. 50 from Freecharge. Enjoy Rs. 50 on Recharge 50 (New Users) listed on the listing page. This Coupon is applicable to new users. Airtel, Net banking and wallet balance is not valid for this Coupon. Coupon expires on 25 May 2016.</td>
+																							<td>RUCVENX</td>
+																							<td>coupon</td>
+																							<td>http://www.freecharge.in</td>
+																							<td>1464129036</td>
+																							<td>Rs. 50</td>
+																							<td>165168</td>
+																							<td>Others|,Wallet &amp; Payment Gateways</td>
+																							<td>1041</td>
+																							<td>Freecharge</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="odd">
+																							<td class="sorting_1">912992500705628</td>
+																							<td>SSL Certificate Security at 25% OFF</td>
+																							<td>Astonishing offer from GoDaddy. Use this Coupon and get discount of 25% Off from GoDaddy. Click on Get Code to unlock coupon and visit merchant. Coupon expires on 25 May 2016. This Coupon is applicable to all users.</td>
+																							<td>CJCPIRATES</td>
+																							<td>coupon</td>
+																							<td>https://in.godaddy.com/</td>
+																							<td>1464126367</td>
+																							<td>25% Off</td>
+																							<td>160157</td>
+																							<td>Software|,Entertainment, Media &amp; Software</td>
+																							<td>1008</td>
+																							<td>GoDaddy</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="even">
+																							<td class="sorting_1">913187100713328</td>
+																							<td>20% OFF on Food order for new customer (1st order)</td>
+																							<td>Great offer from Zomato. Click on Get Code to unlock coupon and visit merchant. Enjoy 20% Off on Your First Food Order listed on the listing page. This Coupon is redeemable to all users. Use this Coupon and get discount of 20% Off from Zomato. Coupon expires on 25 May 2016.</td>
+																							<td>SUMMER</td>
+																							<td>coupon</td>
+																							<td>https://www.zomato.com</td>
+																							<td>1464119114</td>
+																							<td>20% Off</td>
+																							<td>147</td>
+																							<td>Grocery, Food &amp; Beverages</td>
+																							<td>1019</td>
+																							<td>Zomato</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="odd">
+																							<td class="sorting_1">913966900704928</td>
+																							<td>Levi's Jeans at extra 10% OFF</td>
+																							<td>Amazing offer from Snapdeal. Use this Coupon and get discount of 10% Off from Snapdeal. This Coupon is redeemable to all users. Coupon expires on 24 May 2016. Click on Get Code to unlock coupon and visit merchant. Offer applicable on products listed on landing page.</td>
+																							<td>LEVIS50</td>
+																							<td>coupon</td>
+																							<td>http://www.snapdeal.com/offers/levis-tnc</td>
+																							<td>1464089270</td>
+																							<td>10% Off</td>
+																							<td>111109111109111000</td>
+																							<td>Fashion|,Clothing</td>
+																							<td>1007</td>
+																							<td>Snapdeal</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr><tr role="row" class="even">
+																							<td class="sorting_1">954170000745514</td>
+																							<td>dot com Domain at Rs. 99 only</td>
+																							<td>Great offer from BigRock. This Offer is usable to all users. Click on Get Offer to visit landing page Encash Rs 99 on (.com) Domain For listed on the listing page. Apply this Offer and get discount of Rs 99 from BigRock. in conjunctiwith any other offer or promotions is not valid for this Offer. Offer expires on 25 May 2016.</td>
+																							<td></td>
+																							<td>discount</td>
+																							<td>http://www.bigrock.in</td>
+																							<td>1464114600</td>
+																							<td>Rs 99</td>
+																							<td>159157</td>
+																							<td>Web Hosting &amp; Domains|,Entertainment, Media &amp; Software</td>
+																							<td>1065</td>
+																							<td>BigRock</td>
+																							<td>0000-00-00</td>
+																							<td>0000-00-00</td>
+																					</tr></tbody>
+						</table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of 49 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example_previous"><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button next" id="example_next"><a href="http://demo.coupomated.com/browse-coupons/#" aria-controls="example" data-dt-idx="6" tabindex="0">Next</a></li></ul></div></div></div></div>
+					</div>
+				</div>
+				<style>
+.faqcat{font-size: 30px;}
+</style>				<br><br><br>
+				</div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+		 <!-- /#page-wrapper -->
+
+
+
+
+<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+	
+$(document).ready(function(){
+	$('.faqp a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+		
+	    var target = this.hash,
+	    $target = $(target);
+		
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+  </script>
+<style>
+	#footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	color: #fff;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+	text-align: center;
+	border-top: 1px solid #A9A9A9;
+		
+	}
+.footer-menu{
+	clear: none;
+    display: block;
+      padding-top: 22px;
+    margin: 0;
+}
+	.footer-menu li{ display:block;float:left;position: relative;    list-style: none;
+    margin: 0;
+    padding: 0;}
+	.footer-menu li a {
+    padding: 30px 20px 32px;color: #fff;
+	}
+	.text{padding:12px;}
+	
+</style>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="footer-menu">
+						                            <li><a href="http://demo.coupomated.com/about-us">About Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/features">Features </a></li>
+			                            <li><a href="http://demo.coupomated.com/plans">Plans </a></li>
+			                            <li><a href="http://demo.coupomated.com/contact-us">Contact Us </a></li>
+			                            <li><a href="http://demo.coupomated.com/terms-and-privacy-policy">Terms &amp; Privacy Policy </a></li>
+			                            <li><a href="http://demo.coupomated.com/request-a-demo">Request a Demo </a></li>
+			                            <li><a href="http://demo.coupomated.com/services">Services </a></li>
+			                            <li><a href="http://demo.coupomated.com/how-it-works">How It Works </a></li>
+			                            <li><a href="http://demo.coupomated.com/faq">FAQ  </a></li>
+							</ul>
+			</div>
+			<div class="col-md-12 text">
+				<p>© 2016 - Coupomated.com. All Rights Reserved.</p>
+				<p>Made in India with Passion</p>
+			</div>
+			</div>
+		</div>
+</footer><div id="chatra" class="chatra--style-round chatra--side-right chatra--pos-bottom chatra--visible" style="width: 70px; height: 70px; transform: none; z-index: 9999;"><iframe frameborder="0" id="chatra__iframe" allowtransparency="true" src="./Browse deals_files/saved_resource.html" style="position: absolute;"></iframe></div></body></html>
